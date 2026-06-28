@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}Upload File — Restok Obat{% endblock %}
+{% block heading %}Upload Data & Latih Model{% endblock %}
+{% block content %}
+
+<div class="grid-2">
+  <div class="panel">
+    <h2><i class="bi bi-file-earmark-arrow-down"></i> Template Excel</h2>
+    <p class="muted">Unduh template sesuai format raw data pengeluaran (8 kolom + sheet PETUNJUK), isi, lalu upload.</p>
+    <a class="btn" style="background:var(--green);color:#fff" href="{{ url_for('upload.template') }}">
+      <i class="bi bi-download"></i> Download Template Excel</a>
+  </div>
+
+  <div class="panel">
+    <h2><i class="bi bi-cloud-upload"></i> Upload Data Pengeluaran</h2>
+    <form method="post" action="{{ url_for('upload.proses') }}" enctype="multipart/form-data" id="upForm">
+      <label class="muted" style="font-size:.8rem">Model yang dilatih ulang (duplikat / challenger)</label>
+      <select name="model_pilihan" class="form-select mb-3">
+        {% for val,lbl in model_choices %}<option value="{{ val }}">{{ lbl }}</option>{% endfor %}
+      </select>
+
+      <div class="dropzone" id="dropzone">
+        <i class="bi bi-filetype-xlsx" style="font-size:2rem"></i>
+        <div id="dzText">Tarik file .xlsx ke sini atau klik untuk memilih</div>
+        <input type="file" name="file" id="fileInput" accept=".xlsx" hidden>
+      </div>
+      <button class="btn mt-3" style="background:var(--green-d);color:#fff" type="submit">
+        <i class="bi bi-gear"></i> Proses & Latih Challenger</button>
+      <small class="muted d-block mt-2">Model AKTIF tidak disentuh. Challenger dilatih sebagai duplikat lalu Anda pilih pakai/tolak.</small>
+    </form>
+  </div>
+</div>
+
+<div class="panel">
+  <h2><i class="bi bi-clock-history"></i> Riwayat Upload</h2>
+  <table class="tbl">
+    <thead><tr><th>#</th><th>File</th><th class="num">Baris</th><th class="num">Valid</th>
+      <th class="num">Ditolak</th><th>Model</th><th>Status</th><th>Waktu</th><th></th></tr></thead>
+    <tbody>
+      {% for u in uploads %}
+      <tr>
+        <td>{{ u.upload_id }}</td><td>{{ u.filename }}</td>
+        <td class="num">{{ u.n_baris }}</td><td class="num">{{ u.n_valid }}</td>
+        <td class="num">{{ u.n_ditolak }}</td><td>{{ u.model_dilatih }}</td>
+        <td>{{ u.status }}</td>
+        <td class="muted">{{ u.uploaded_at.strftime('%Y-%m-%d %H:%M') if u.uploaded_at }}</td>
+        <td>
+          {% if u.status=='selesai' and u.candidate_version %}
+            <a class="obat-link" href="{{ url_for('upload.hasil', version_id=u.candidate_version) }}">lihat metrik →</a>
+          {% elif u.status=='diproses' %}
+            <a class="obat-link" href="{{ url_for('upload.status_page', upload_id=u.upload_id) }}">status →</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% else %}<tr><td colspan="9" class="muted">Belum ada upload.</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="panel">
+  <h2><i class="bi bi-diagram-3"></i> Riwayat Versi Model</h2>
+  <table class="tbl">
+    <thead><tr><th>Versi</th><th>Model</th><th>Status</th><th>MAE</th><th>Dilatih</th><th>Aksi</th></tr></thead>
+    <tbody>
+      {% for v in versions %}
+      <tr>
+        <td>#{{ v.version_id }}</td><td>{{ v.nama_model }}</td>
+        <td>
+          {% set vc = {'active':'s-aman','candidate':'s-perhatian','rejected':'s-segera','archived':'s-historis'} %}
+          <span class="badge-status {{ vc.get(v.status,'s-historis') }}">{{ v.status }}</span>
+        </td>
+        <td>{% if v.metrics_json %}{{ '%.2f'|format((v.metrics_json|from_json).MAE) }}{% else %}-{% endif %}</td>
+        <td class="muted">{{ v.trained_at.strftime('%Y-%m-%d %H:%M') if v.trained_at }}</td>
+        <td>
+          {% if v.status=='candidate' %}
+            <a class="obat-link" href="{{ url_for('upload.hasil', version_id=v.version_id) }}">tinjau →</a>
+          {% elif v.status=='archived' %}
+            <form method="post" action="{{ url_for('upload.rollback', version_id=v.version_id) }}" style="display:inline"
+                  onsubmit="return confirm('Rollback ke versi #{{ v.version_id }}?')">
+              <button class="btn btn-sm btn-outline-secondary">rollback</button>
+            </form>
+          {% endif %}
+        </td>
+      </tr>
+      {% else %}<tr><td colspan="6" class="muted">Belum ada versi model.</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+const dz=document.getElementById('dropzone'),fi=document.getElementById('fileInput'),txt=document.getElementById('dzText');
+dz.addEventListener('click',()=>fi.click());
+fi.addEventListener('change',()=>{if(fi.files.length)txt.textContent=fi.files[0].name;});
+['dragover','dragenter'].forEach(e=>dz.addEventListener(e,ev=>{ev.preventDefault();dz.classList.add('drag');}));
+['dragleave','drop'].forEach(e=>dz.addEventListener(e,ev=>{ev.preventDefault();dz.classList.remove('drag');}));
+dz.addEventListener('drop',ev=>{if(ev.dataTransfer.files.length){fi.files=ev.dataTransfer.files;txt.textContent=fi.files[0].name;}});
+</script>
+{% endblock %}

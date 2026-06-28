@@ -1,0 +1,1078 @@
+{
+  "k": 6,
+  "features": [
+    "volume",
+    "cv",
+    "frekuensi",
+    "stok"
+  ],
+  "cluster_label_map": {
+    "0": "Slow-moving stabil",
+    "1": "Fast-moving stabil",
+    "2": "Fast-moving fluktuatif",
+    "3": "Slow-moving fluktuatif",
+    "4": "Medium-moving fluktuatif",
+    "5": "Medium-moving stabil"
+  },
+  "silhouette": {
+    "2": 0.3361,
+    "3": 0.3463,
+    "4": 0.3414,
+    "5": 0.3401,
+    "6": 0.3467,
+    "7": 0.3246,
+    "8": 0.314,
+    "9": 0.2841,
+    "10": 0.2984
+  },
+  "obat": {
+    "ACETYLCYSTEIN KAP": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 664.0,
+      "cv": 0.56,
+      "frekuensi": 11,
+      "stok": 1971.08
+    },
+    "ACYCLOVIR SALEP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 23.89,
+      "cv": 0.645,
+      "frekuensi": 9,
+      "stok": 88.25
+    },
+    "ACYCLOVIR TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 336.89,
+      "cv": 0.476,
+      "frekuensi": 9,
+      "stok": 1899.5
+    },
+    "ALLOPURINOL TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 22.5,
+      "cv": 0.678,
+      "frekuensi": 6,
+      "stok": 524.42
+    },
+    "AMBEVEN TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 40.0,
+      "cv": 0.401,
+      "frekuensi": 7,
+      "stok": 190.0
+    },
+    "AMBROXOL TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 302.0,
+      "cv": 1.084,
+      "frekuensi": 5,
+      "stok": 1633.33
+    },
+    "AMLODIPINE 10 MG TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 42.45,
+      "cv": 0.539,
+      "frekuensi": 11,
+      "stok": 348.92
+    },
+    "AMLODIPINE 5 MG": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 91.36,
+      "cv": 0.222,
+      "frekuensi": 11,
+      "stok": 318.08
+    },
+    "AMOXCICILIN SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.56,
+      "cv": 0.615,
+      "frekuensi": 9,
+      "stok": 10.33
+    },
+    "AMOXICILLIN TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 139.4,
+      "cv": 0.869,
+      "frekuensi": 5,
+      "stok": 842.33
+    },
+    "ANTASIDA TABLET": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 245.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 1155.0
+    },
+    "ARKAVIT-C TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 265.0,
+      "cv": 1.0,
+      "frekuensi": 2,
+      "stok": 70.0
+    },
+    "ASAM MEFENAMAT 500 MG TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 341.0,
+      "cv": 1.045,
+      "frekuensi": 11,
+      "stok": 701.08
+    },
+    "AZITROMICYN TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 41.0,
+      "cv": 0.889,
+      "frekuensi": 10,
+      "stok": 234.58
+    },
+    "BECEFORT TAB": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 186.25,
+      "cv": 0.982,
+      "frekuensi": 8,
+      "stok": 167.08
+    },
+    "BECOMZET TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 882.3,
+      "cv": 0.768,
+      "frekuensi": 10,
+      "stok": 1127.67
+    },
+    "BENOSON-G SALEP": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 0.43,
+      "cv": 1.7,
+      "frekuensi": 7,
+      "stok": 10.92
+    },
+    "BENOSON-M SALEP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 1.4,
+      "cv": 0.571,
+      "frekuensi": 5,
+      "stok": 3.58
+    },
+    "BENOSON-N 15 G SALEP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.44,
+      "cv": 0.643,
+      "frekuensi": 9,
+      "stok": 14.08
+    },
+    "BETADINE 15 ML": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 1.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 1.0
+    },
+    "BISOPROROL 5 TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 25.0,
+      "cv": 0.835,
+      "frekuensi": 7,
+      "stok": 439.17
+    },
+    "BUSCOPAN INJEKSI": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 6.67,
+      "cv": 0.731,
+      "frekuensi": 9,
+      "stok": 8.33
+    },
+    "CAIRAN INFUS NACL 500ML": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 9.5,
+      "cv": 0.867,
+      "frekuensi": 10,
+      "stok": 15.25
+    },
+    "CAIRAN INFUS RINGER LAKTAT 500ML": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 5.0,
+      "cv": 0.516,
+      "frekuensi": 6,
+      "stok": 16.75
+    },
+    "CALLUSOL": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 3.0,
+      "cv": 0.527,
+      "frekuensi": 4,
+      "stok": 10.33
+    },
+    "CALORTUSIN TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 55.0,
+      "cv": 1.0,
+      "frekuensi": 2,
+      "stok": 305.83
+    },
+    "CANDESARTAN 16MG TAB": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 30.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 170.0
+    },
+    "CANDESARTAN 8MG TAB": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 29.8,
+      "cv": 0.963,
+      "frekuensi": 5,
+      "stok": 149.17
+    },
+    "CAPTOPRIL 12,5MG TABLET": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 7.5,
+      "cv": 0.333,
+      "frekuensi": 2,
+      "stok": 202.67
+    },
+    "CEFADROXIL 500MG KAPSUL": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 283.64,
+      "cv": 1.139,
+      "frekuensi": 11,
+      "stok": 1293.75
+    },
+    "CEFIXIME SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.86,
+      "cv": 0.51,
+      "frekuensi": 7,
+      "stok": 9.33
+    },
+    "CENDOXITROL TETES MATA STERIL": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 1.9,
+      "cv": 0.684,
+      "frekuensi": 10,
+      "stok": 7.5
+    },
+    "CETIRIZINE 10 MG TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 390.73,
+      "cv": 0.648,
+      "frekuensi": 11,
+      "stok": 1052.92
+    },
+    "CIPROFLOXASIN 500 MG TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 93.67,
+      "cv": 0.59,
+      "frekuensi": 6,
+      "stok": 663.08
+    },
+    "COMBANTRIN 250 MG TABLET": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 7.56,
+      "cv": 0.692,
+      "frekuensi": 9,
+      "stok": 100.0
+    },
+    "COMBIVENT RESPULE": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 0.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 0.0
+    },
+    "COUNTERPAIN CREAM 30G": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 7.0,
+      "cv": 0.787,
+      "frekuensi": 6,
+      "stok": 17.92
+    },
+    "CTM TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 166.67,
+      "cv": 0.894,
+      "frekuensi": 6,
+      "stok": 1883.33
+    },
+    "CURVIT TABLET": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 17.0,
+      "cv": 1.029,
+      "frekuensi": 5,
+      "stok": 22.08
+    },
+    "DEXAMETHASONE INJEKSI": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 9.27,
+      "cv": 1.467,
+      "frekuensi": 11,
+      "stok": 25.0
+    },
+    "DIAFORM TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 235.44,
+      "cv": 0.789,
+      "frekuensi": 9,
+      "stok": 322.75
+    },
+    "DOMPERIDONE SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.0,
+      "cv": 0.756,
+      "frekuensi": 7,
+      "stok": 6.33
+    },
+    "DOMPERIDONE TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 294.8,
+      "cv": 0.659,
+      "frekuensi": 10,
+      "stok": 747.17
+    },
+    "DULCOLAX 5MG TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 12.8,
+      "cv": 0.859,
+      "frekuensi": 5,
+      "stok": 71.0
+    },
+    "ERLAMICETIN TETES MATA": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.86,
+      "cv": 0.436,
+      "frekuensi": 7,
+      "stok": 5.33
+    },
+    "ERLAMICETIN TETES TELINGA": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 1.8,
+      "cv": 0.544,
+      "frekuensi": 10,
+      "stok": 13.92
+    },
+    "ERYTHROMYCIN 500 MG TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 11.0,
+      "cv": 0.498,
+      "frekuensi": 6,
+      "stok": 426.08
+    },
+    "FARSIFEN PLUS (PARASETAMOL + IBUPROFEN) TABLET": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 20.0,
+      "cv": 0.5,
+      "frekuensi": 2,
+      "stok": 336.67
+    },
+    "FG TROCES TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 80.0,
+      "cv": 0.929,
+      "frekuensi": 10,
+      "stok": 704.25
+    },
+    "FIBUMIN KAP": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 40.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 10.0
+    },
+    "FLUTAMOL TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 5.0,
+      "cv": 1.0,
+      "frekuensi": 2,
+      "stok": 486.67
+    },
+    "GABAPENTIN 100MG": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 10.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 90.0
+    },
+    "GENTAMICYN SALEP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 16.8,
+      "cv": 0.671,
+      "frekuensi": 5,
+      "stok": 21.58
+    },
+    "GRANTUSIF TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 413.64,
+      "cv": 0.647,
+      "frekuensi": 11,
+      "stok": 837.08
+    },
+    "HEVIT PLUS TAB": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 260.0,
+      "cv": 0.673,
+      "frekuensi": 2,
+      "stok": 269.58
+    },
+    "HISTIGO (BETAHISTIN) 6 MG TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 79.45,
+      "cv": 0.55,
+      "frekuensi": 11,
+      "stok": 299.42
+    },
+    "HOT IN CREAM  60G": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 8.57,
+      "cv": 1.007,
+      "frekuensi": 7,
+      "stok": 19.42
+    },
+    "HUFABETHAMINE SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 8.27,
+      "cv": 0.696,
+      "frekuensi": 11,
+      "stok": 6.75
+    },
+    "HUFAGRIP BP HIJAU SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 6.0,
+      "cv": 0.782,
+      "frekuensi": 9,
+      "stok": 6.67
+    },
+    "HYDROCORTISONE SALEP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.91,
+      "cv": 0.932,
+      "frekuensi": 11,
+      "stok": 16.42
+    },
+    "IBUPROFEN 400MG TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 86.6,
+      "cv": 0.975,
+      "frekuensi": 10,
+      "stok": 427.75
+    },
+    "IMBOOST KIDS SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.86,
+      "cv": 0.925,
+      "frekuensi": 7,
+      "stok": 4.17
+    },
+    "INFUSET MAKRO": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 2.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 17.0
+    },
+    "INTERZINC SIRUP": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 1.0,
+      "cv": 0.0,
+      "frekuensi": 2,
+      "stok": 5.92
+    },
+    "INTRIZIN TAB (CETIRIZIN)": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 162.5,
+      "cv": 0.698,
+      "frekuensi": 8,
+      "stok": 130.0
+    },
+    "KALBION TAB": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 0.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 300.0
+    },
+    "KASA NON STERIL": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 5.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 16.0
+    },
+    "KASA STERIL": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 45.0,
+      "cv": 0.824,
+      "frekuensi": 4,
+      "stok": 28.17
+    },
+    "KENALOG SALEP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.33,
+      "cv": 0.404,
+      "frekuensi": 6,
+      "stok": 9.75
+    },
+    "KETOCONAZOLE SALEP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 14.44,
+      "cv": 1.05,
+      "frekuensi": 9,
+      "stok": 43.67
+    },
+    "KETONAZOLE 200MG TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 27.14,
+      "cv": 0.614,
+      "frekuensi": 7,
+      "stok": 365.83
+    },
+    "KETOROLAC INJEKSI": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 9.09,
+      "cv": 1.06,
+      "frekuensi": 11,
+      "stok": 45.75
+    },
+    "L-BIO": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 12.5,
+      "cv": 0.806,
+      "frekuensi": 6,
+      "stok": 26.75
+    },
+    "LACTO B": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 10.0,
+      "cv": 0.99,
+      "frekuensi": 8,
+      "stok": 40.42
+    },
+    "LANSOPRAZOLE KAPSUL": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 18.75,
+      "cv": 0.562,
+      "frekuensi": 8,
+      "stok": 130.0
+    },
+    "LIBROFED (TRIPROLIDIN =~ PSEUDOEFEDRIN) TAB": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 150.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 1650.0
+    },
+    "MADU TJ SACHET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 45.5,
+      "cv": 0.89,
+      "frekuensi": 2,
+      "stok": 37.75
+    },
+    "METHYLPREDNISOLON 8MG TAB": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 922.62,
+      "cv": 1.26,
+      "frekuensi": 8,
+      "stok": 905.58
+    },
+    "METHYLPREDNISOLONE 4 MG TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 1047.0,
+      "cv": 0.855,
+      "frekuensi": 11,
+      "stok": 973.17
+    },
+    "METRONIDAZOLE 500MG TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 119.09,
+      "cv": 0.693,
+      "frekuensi": 11,
+      "stok": 613.42
+    },
+    "MICROLAX RECTAL": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 2.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 10.0
+    },
+    "NEO-PROTIFED (TRIPROLIDIN + PSEUDOEFEDRIN) TAB": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 704.8,
+      "cv": 0.515,
+      "frekuensi": 10,
+      "stok": 1265.33
+    },
+    "NEURALGIN TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 10.0,
+      "cv": 0.816,
+      "frekuensi": 3,
+      "stok": 222.5
+    },
+    "NEUROBION FORTE/PINK TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 68.6,
+      "cv": 0.997,
+      "frekuensi": 10,
+      "stok": 241.0
+    },
+    "NEUROBION PUTIH TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 287.64,
+      "cv": 0.683,
+      "frekuensi": 11,
+      "stok": 216.83
+    },
+    "OMEGTAMINE TAB": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 187.12,
+      "cv": 0.568,
+      "frekuensi": 8,
+      "stok": 1648.17
+    },
+    "OMEPRAZOLE KAPSUL": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 191.64,
+      "cv": 0.445,
+      "frekuensi": 11,
+      "stok": 1872.58
+    },
+    "ONDANSETRON 4MG TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 30.8,
+      "cv": 0.765,
+      "frekuensi": 5,
+      "stok": 188.5
+    },
+    "ONDANSETRON INJEKSI": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 6.89,
+      "cv": 0.776,
+      "frekuensi": 9,
+      "stok": 42.83
+    },
+    "ORALITE": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 108.18,
+      "cv": 0.427,
+      "frekuensi": 11,
+      "stok": 174.25
+    },
+    "PARACETAMOL 500MG TABLET": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 0.0,
+      "cv": 0.0,
+      "frekuensi": 2,
+      "stok": 0.0
+    },
+    "PARACETAMOL INFUS": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 1.0,
+      "cv": 0.0,
+      "frekuensi": 2,
+      "stok": 1.58
+    },
+    "PECTORIN EXP SIRUP": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 2.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 0.0
+    },
+    "PLANTACYD SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 3.57,
+      "cv": 0.884,
+      "frekuensi": 7,
+      "stok": 7.08
+    },
+    "POLYSILANE 100ML": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 10.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 0.0
+    },
+    "POLYSILANE TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 100.0,
+      "cv": 1.359,
+      "frekuensi": 6,
+      "stok": 158.67
+    },
+    "PROMAVIT TABLET": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 15.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 10.0
+    },
+    "PROME SIRUP": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 10.33,
+      "cv": 1.079,
+      "frekuensi": 3,
+      "stok": 26.67
+    },
+    "PROMEDEX TAB": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 1080.0,
+      "cv": 0.931,
+      "frekuensi": 4,
+      "stok": 591.5
+    },
+    "PULMICORT NEBULIZER": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 1.33,
+      "cv": 0.354,
+      "frekuensi": 3,
+      "stok": 2.75
+    },
+    "RANITIDINE TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 485.27,
+      "cv": 0.599,
+      "frekuensi": 11,
+      "stok": 1194.67
+    },
+    "SALBUTAMOL 2 MG TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 21.25,
+      "cv": 0.917,
+      "frekuensi": 4,
+      "stok": 243.33
+    },
+    "SANADRYL DMP 120 ML": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 4.17,
+      "cv": 0.994,
+      "frekuensi": 6,
+      "stok": 4.33
+    },
+    "SANGOBION KAPSUL": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 50.18,
+      "cv": 0.512,
+      "frekuensi": 11,
+      "stok": 440.75
+    },
+    "SANMOL FORTE SIRUP": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 3.12,
+      "cv": 0.406,
+      "frekuensi": 8,
+      "stok": 6.08
+    },
+    "SANMOL SIRUP": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 0.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 1.0
+    },
+    "SCABICID (PERMEHETRIN 5%) CREAM 10G": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 2.33,
+      "cv": 0.535,
+      "frekuensi": 3,
+      "stok": 5.0
+    },
+    "SCABIMITE SALEB 10G": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 0.5,
+      "cv": 1.0,
+      "frekuensi": 2,
+      "stok": 0.0
+    },
+    "SCOPMA PLUS (HYOSCINE + PARASETAMOL) TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 168.0,
+      "cv": 0.853,
+      "frekuensi": 11,
+      "stok": 998.42
+    },
+    "SELCOM C TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 197.5,
+      "cv": 0.924,
+      "frekuensi": 2,
+      "stok": 445.0
+    },
+    "SILADEX BIRU SIRUP": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 1.0,
+      "cv": 1.0,
+      "frekuensi": 2,
+      "stok": 2.0
+    },
+    "SIMVASTATIN 10 MG TABLET": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 10.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 290.0
+    },
+    "SIMVASTATIN 20 MG TABLET": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 15.0,
+      "cv": 0.333,
+      "frekuensi": 2,
+      "stok": 268.75
+    },
+    "STIK ASAM URAT": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 8.33,
+      "cv": 1.414,
+      "frekuensi": 3,
+      "stok": 72.92
+    },
+    "STIK CHOLESTROL": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 6.67,
+      "cv": 1.414,
+      "frekuensi": 3,
+      "stok": 30.83
+    },
+    "SUCRALFATE SIRUP": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 5.0,
+      "cv": 0.748,
+      "frekuensi": 3,
+      "stok": 10.83
+    },
+    "TEMPRA SIRUP": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 1.0,
+      "cv": 1.0,
+      "frekuensi": 2,
+      "stok": 0.0
+    },
+    "TIFALSIC (PARASETAMOL + IBUPROFEN) TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 10.0,
+      "cv": 0.816,
+      "frekuensi": 3,
+      "stok": 611.33
+    },
+    "TRANSAMIN (ASAM TRANEXAMAT 500MG) TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 77.91,
+      "cv": 0.924,
+      "frekuensi": 11,
+      "stok": 506.58
+    },
+    "TREMENZA TAB": {
+      "cluster": 5,
+      "label": "Medium-moving stabil",
+      "volume": 200.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 100.0
+    },
+    "TRIANTA TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 140.45,
+      "cv": 1.172,
+      "frekuensi": 11,
+      "stok": 251.25
+    },
+    "URINTER TABLET": {
+      "cluster": 2,
+      "label": "Fast-moving fluktuatif",
+      "volume": 35.71,
+      "cv": 0.526,
+      "frekuensi": 7,
+      "stok": 207.5
+    },
+    "VENTOLIN NEBULLIZER": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 4.0,
+      "cv": 0.395,
+      "frekuensi": 4,
+      "stok": 8.42
+    },
+    "VENTOLIN SIRUP": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 1.0,
+      "cv": 0.0,
+      "frekuensi": 1,
+      "stok": 0.0
+    },
+    "VERBAN ELASTIS 10CM X 4,5M": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 3.8,
+      "cv": 0.51,
+      "frekuensi": 5,
+      "stok": 17.0
+    },
+    "VERBAN ELASTIS 15CM X 4,5M": {
+      "cluster": 0,
+      "label": "Slow-moving stabil",
+      "volume": 5.5,
+      "cv": 0.091,
+      "frekuensi": 2,
+      "stok": 16.0
+    },
+    "VERBAN ELASTIS 7,5CM X 4,5M": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 2.8,
+      "cv": 0.827,
+      "frekuensi": 5,
+      "stok": 17.42
+    },
+    "WOODS ANTITUSIVE SIRUP 100ML": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 4.11,
+      "cv": 1.274,
+      "frekuensi": 9,
+      "stok": 4.92
+    },
+    "WOODS EKSPEKTORAN SIRUP 100ML": {
+      "cluster": 4,
+      "label": "Medium-moving fluktuatif",
+      "volume": 6.7,
+      "cv": 0.608,
+      "frekuensi": 10,
+      "stok": 9.92
+    },
+    "ZEGAVIT TABLET": {
+      "cluster": 1,
+      "label": "Fast-moving stabil",
+      "volume": 194.4,
+      "cv": 0.444,
+      "frekuensi": 10,
+      "stok": 361.0
+    },
+    "ZINK TABLET": {
+      "cluster": 3,
+      "label": "Slow-moving fluktuatif",
+      "volume": 15.71,
+      "cv": 2.201,
+      "frekuensi": 7,
+      "stok": 190.0
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{% extends "base.html" %} {% block title %}Rekomendasi — Restok Obat{% endblock %} {% block heading %}Rekomendasi Restok{% endblock %} {% block content %}
+
+<div class="panel">
+    <form method="get" class="filters">
+        <div>
+            <label>Cari Nama Obat</label>
+            <input type="text" name="q" value="{{ f.q }}" class="form-control" placeholder="mis. PARACETAMOL">
+        </div>
+        <div>
+            <label>Periode (bulan & tahun)</label>
+            <select name="periode" class="form-select" onchange="this.form.submit()">
+
+    {% if next_period %}
+    <option value="{{ next_period }}"
+            {{ 'selected' if not f.periode }}>
+        {{ label(next_period) }}
+    </option>
+    {% endif %}
+
+    {% for p in periods %}
+    <option value="{{ p }}"
+            {{ 'selected' if f.periode==p }}>
+        {{ label(p) }}
+    </option>
+    {% endfor %}
+
+</select>
+        </div>
+        <!-- <div>
+            <label>Segmen</label>
+            <select name="segmen" class="form-select" onchange="this.form.submit()">
+        <option value="">Semua</option>
+        {% for s in segmen_opts %}
+        <option value="{{ s }}" {{ 'selected' if f.segmen==s }}>{{ s }}</option>
+        {% endfor %}
+      </select>
+        </div>
+        <div>
+            <label>Model</label>
+            <select name="model" class="form-select" onchange="this.form.submit()">
+        <option value="">Model aktif (default)</option>
+        {% for m in model_opts %}
+        <option value="{{ m.nama_model }}" {{ 'selected' if f.model==m.nama_model }}>
+          v{{ m.version_id }} · {{ m.nama_model }} ({{ m.status }})</option>
+        {% endfor %}
+      </select>
+        </div> -->
+        <div>
+            <label>Status</label>
+            <select name="status" class="form-select" onchange="this.form.submit()">
+        <option value="">Semua status</option>
+        {% for s in status_all %}
+        <option value="{{ s }}" {{ 'selected' if s in f.status }}>{{ s }}</option>
+        {% endfor %}
+      </select>
+        </div>
+        <div style="display:flex;gap:8px">
+            <button class="btn" style="background:var(--green);color:#fff"><i class="bi bi-funnel"></i> Terapkan</button>
+            <a class="btn btn-outline-secondary" href="{{ url_for('rekomendasi.index') }}">Reset</a>
+        </div>
+    </form>
+</div>
+
+{% if banner %}
+<div class="banner {{ 'warn' if is_future }}"><i class="bi bi-info-circle"></i> {{ banner }}</div>{% endif %}
+
+<div class="panel">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <span class="muted">{{ total }} obat ditemukan</span>
+        <a class="btn btn-sm" style="background:#1b5e20;color:#fff" href="{{ url_for('rekomendasi.export', **request.args) }}"><i class="bi bi-file-earmark-excel"></i> Ekspor Excel</a>
+    </div>
+    <div style="overflow-x:auto">
+        <table class="tbl">
+            <thead>
+                <tr>
+                    {% set cols = [ ('nama_obat','Nama Obat','Identitas unik dari setiap item farmasi yang dikelola.'), ('periode','Periode','Rentang waktu pengamatan atau evaluasi data stok (misalnya bulanan atau mingguan) untuk melihat tren konsumsi.'), ('stok_saat_ini','Stok
+                    Saat Ini','Jumlah fisik atau sistematis obat yang tersedia di gudang atau apotek klinik pada waktu tertentu.'), ('prediksi_demand','Prediksi Pemakaian/Bln','Estimasi jumlah kebutuhan obat untuk bulan mendatang yang dihitung menggunakan
+                    metode deret waktu berdasarkan data historis.'), ('safety_stock','Stok Pengaman','Cadangan stok tambahan yang disiapkan untuk mengantisipasi ketidakpastian permintaan atau keterlambatan pengiriman agar tidak terjadi stock-out.'), ('rop','Re-Order
+                    Point','Level stok minimum yang menjadi sinyal untuk segera melakukan pemesanan kembali. Jika stok mencapai level ini maka proses restok harus dimulai.'), ('jumlah_rekomendasi','Jumlah Re-Stok','Kuantitas optimal yang harus dipesan
+                    agar stok kembali ke batas maksimum tanpa menimbulkan overstock.'), ('satuan','Satuan','Unit pengukuran untuk setiap item obat.'), ('status','Status','Kondisi stok berdasarkan hasil perhitungan sistem, misalnya Aman atau Perlu Restok.')
+                    ] %} {% for key, lbl, tooltip in cols %} {% set ndir = 'asc' if (f.sort==key and f.dir=='desc') else 'desc' %}
+                    <th title="{{ tooltip }}">
+                        <a class="obat-link" href="{{ url_for('rekomendasi.index', **dict(request.args, sort=key, dir=ndir)) }}">
+                    {{ lbl }}
+                    {% if f.sort==key %}
+                        {{ '▼' if f.dir=='desc' else '▲' }}
+                    {% endif %}
+                </a>
+                    </th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in rows %}
+                <tr>
+                    <td>{{ r.nama_obat }}</td>
+                    <td>{{ r.periode }}</td>
+                    <td class="num">{{ '%.0f'|format(r.stok_saat_ini or 0) }}</td>
+                    <td class="num">{{ '%.0f'|format(r.prediksi_demand or 0) }}</td>
+                    <td class="num">{{ '%.1f'|format(r.safety_stock) if r.safety_stock is not none else '-' }}</td>
+                    <td class="num">{{ '%.1f'|format(r.rop) if r.rop is not none else '-' }}</td>
+                    <td class="num">{{ '%.0f'|format(r.jumlah_rekomendasi) if r.jumlah_rekomendasi is not none else '-' }}</td>
+                    <td>{{ r.satuan or '-' }}</td>
+                    <td>
+                        {% set cls = {'SEGERA RESTOK':'s-segera','PERLU DIPERHATIKAN':'s-perhatian','STOK AMAN':'s-aman','HISTORIS':'s-historis'} %}
+                        <span class="badge-status {{ cls.get(r.status,'s-historis') }}">{{ r.status }}</span>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="9" class="muted">Tidak ada data sesuai filter.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {% if pages > 1 %}
+    <div class="pagination-bar">
+        {% if page > 1 %}<a class="btn btn-sm btn-outline-secondary" href="{{ url_for('rekomendasi.index', **dict(request.args, page=page-1)) }}">← Prev</a>{% endif %}
+        <span class="muted">Halaman {{ page }} / {{ pages }}</span> {% if page
+        < pages %}<a class="btn btn-sm btn-outline-secondary" href="{{ url_for('rekomendasi.index', **dict(request.args, page=page+1)) }}">Next →</a>{% endif %}
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}

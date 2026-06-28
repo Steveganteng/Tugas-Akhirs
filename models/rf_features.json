@@ -1,0 +1,19 @@
+{
+  "features": [
+    "t",
+    "month",
+    "cluster",
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "rollmean_3",
+    "rollstd_3",
+    "stok_lag_1"
+  ],
+  "best_params": {
+    "max_depth": 15,
+    "max_features": 0.5,
+    "min_samples_leaf": 2,
+    "n_estimators": 100
+  }
+}

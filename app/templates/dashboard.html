@@ -1,0 +1,170 @@
+{% extends "base.html" %} {% block title %}Dashboard — Restok Obat{% endblock %} {% block heading %}Dashboard{% endblock %} {% block content %}
+
+<div class="cards">
+    <div class="card-stat">
+        <div class="label">Total Obat</div>
+        <div class="value">{{ total_obat }}</div>
+    </div>
+    <div class="card-stat red">
+        <div class="label">Segera Restok</div>
+        <div class="value">{{ segera }}</div>
+    </div>
+    <div class="card-stat amber">
+        <div class="label">Perlu Diperhatikan</div>
+        <div class="value">{{ perhatian }}</div>
+    </div>
+    <div class="card-stat green">
+        <div class="label">Stok Aman</div>
+        <div class="value">{{ aman }}</div>
+    </div>
+    <!-- <div class="card-stat">
+        <div class="label">Model Aktif</div>
+        <div class="value" style="font-size:1.05rem">{{ model_aktif }}</div>
+        <small class="muted">MAE: {{ mae_aktif if mae_aktif is not none else '-' }}</small></div>
+    <div class="card-stat">
+        <div class="label">Periode Data</div>
+        <div class="value" style="font-size:1.05rem">{{ last_period }}</div>
+        <small class="muted">Prediksi: {{ forecast_period }}</small></div> -->
+</div>
+
+<div class="grid-2" id="charts-data" data-charts="{{ charts_json|e }}">
+    <div class="panel">
+        <h2>Total Demand per Bulan</h2>
+        <div class="chart-box"><canvas id="chartLine"></canvas></div>
+    </div>
+    <div class="panel">
+        <h2>Top 10 Prediksi Kebutuhan ({{ forecast_period }})</h2>
+        <div class="chart-box"><canvas id="chartBar"></canvas></div>
+    </div>
+    <div class="panel">
+        <h2>Sebaran Status Restok</h2>
+        <div class="chart-box"><canvas id="chartDoughnut"></canvas></div>
+    </div>
+    <div class="panel">
+        <h2>Sebaran Segmen Cluster</h2>
+        <div class="chart-box"><canvas id="chartSegmen"></canvas></div>
+    </div>
+</div>
+
+<div class="panel">
+    <h2><i class="bi bi-exclamation-triangle text-danger"></i> Butuh Segera Direstok (Top 10)</h2>
+    <table class="tbl">
+        <thead>
+            <tr>
+                <th>Nama Obat</th>
+                <th>Periode</th>
+                <th class="num">Stok Saat Ini</th>
+                <th class="num">Prediksi Pemakaian/Bln</th>
+                <th class="num">Stok Pengaman</th>
+                <th class="num">Re-Order Point</th>
+                <th class="num">Jumlah Re-Stok</th>
+                <th>Satuan</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in segera_rows %}
+            <tr>
+                <td>{{ r.nama_obat }}</td>
+                <td>{{ r.periode }}</td>
+                <td class="num">{{ '%.0f'|format(r.stok_saat_ini or 0) }}</td>
+                <td class="num">{{ '%.0f'|format(r.prediksi_demand or 0) }}</td>
+                <td class="num">{{ '%.1f'|format(r.safety_stock) if r.safety_stock is not none else '-' }}</td>
+                <td class="num">{{ '%.1f'|format(r.rop) if r.rop is not none else '-' }}</td>
+                <td class="num">{{ '%.0f'|format(r.jumlah_rekomendasi) if r.jumlah_rekomendasi is not none else '-' }}</td>
+                <td>{{ satuan.get(r.nama_obat, '-') }}</td>
+                <td>
+                    {% set cls = {'SEGERA RESTOK':'s-segera','PERLU DIPERHATIKAN':'s-perhatian','STOK AMAN':'s-aman','HISTORIS':'s-historis'} %}
+                    <span class="badge-status {{ cls.get(r.status,'s-historis') }}">{{ r.status }}</span>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="9" class="muted">Tidak ada obat berstatus SEGERA RESTOK.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %} {% block scripts %}
+<script>
+    const C = JSON.parse(document.getElementById('charts-data').dataset.charts);
+    const green = '#2e7d32',
+        greens = ['#2e7d32', '#66bb6a', '#a5d6a7', '#c8e6c9', '#81c784', '#388e3c', '#43a047'];
+    new Chart(document.getElementById('chartLine'), {
+        type: 'line',
+        data: {
+            labels: C.line.labels,
+            datasets: [{
+                label: 'Total Demand',
+                data: C.line.values,
+                borderColor: green,
+                backgroundColor: 'rgba(46,125,50,.12)',
+                fill: true,
+                tension: .3
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+    new Chart(document.getElementById('chartBar'), {
+        type: 'bar',
+        data: {
+            labels: C.bar.labels,
+            datasets: [{
+                label: 'Prediksi',
+                data: C.bar.values,
+                backgroundColor: green
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+    new Chart(document.getElementById('chartDoughnut'), {
+        type: 'doughnut',
+        data: {
+            labels: C.doughnut.labels,
+            datasets: [{
+                data: C.doughnut.values,
+                backgroundColor: ['#c62828', '#f59e0b', '#2e7d32']
+            }]
+        },
+        options: {
+            maintainAspectRatio: false
+        }
+    });
+    new Chart(document.getElementById('chartSegmen'), {
+        type: 'bar',
+        data: {
+            labels: C.segmen.labels,
+            datasets: [{
+                label: 'Jumlah Obat',
+                data: C.segmen.values,
+                backgroundColor: greens
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

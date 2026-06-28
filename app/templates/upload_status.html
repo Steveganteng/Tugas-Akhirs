@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Status Training — Restok Obat{% endblock %}
+{% block heading %}Status Pelatihan Challenger{% endblock %}
+{% block content %}
+
+<div class="panel" id="statusPanel">
+  <h2>Upload #{{ log.upload_id }} — {{ log.filename }}</h2>
+  <p>Baris valid: <strong>{{ log.n_valid }}</strong> · Ditolak: <strong>{{ log.n_ditolak }}</strong>
+     · Model dilatih: <strong>{{ log.model_dilatih }}</strong></p>
+
+  <div id="statusBox">
+    <div class="banner"><span class="spinner-border spinner-border-sm"></span>
+      Status: <strong id="statusText">{{ log.status }}</strong> — melatih duplikat model di latar belakang...</div>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+const uid={{ log.upload_id }};
+async function poll(){
+  try{
+    const r=await fetch(`{{ url_for('upload.status_json', upload_id=log.upload_id) }}`);
+    const d=await r.json();
+    document.getElementById('statusText').textContent=d.status;
+    if(d.status==='selesai' && d.candidate_version){
+      window.location.href=`/upload/hasil/${d.candidate_version}`;
+    }else if(d.status==='gagal'){
+      document.getElementById('statusBox').innerHTML=
+        `<div class="banner warn"><b>Training gagal.</b><pre style="white-space:pre-wrap">${d.error_text||''}</pre></div>`;
+    }else{ setTimeout(poll,2500); }
+  }catch(e){ setTimeout(poll,3000); }
+}
+{% if log.status not in ['selesai','gagal'] %}poll();{% elif log.status=='selesai' and log.candidate_version %}window.location.href="{{ url_for('upload.hasil', version_id=log.candidate_version) }}";{% endif %}
+</script>
+{% endblock %}

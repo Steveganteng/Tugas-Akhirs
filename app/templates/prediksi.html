@@ -1,0 +1,166 @@
+{% extends "base.html" %} {% block title %}Prediksi Pola Pengeluaran{% endblock %} {% block heading %}Prediksi Pola Pengeluaran{% endblock %} {% block content %}
+
+<div class="panel">
+    <form method="get" class="filters">
+        <div>
+            <label>Obat</label>
+            <select name="obat" class="form-select" onchange="this.form.submit()">
+        <option value="__TOTAL__" {{ 'selected' if sel_obat=='__TOTAL__' }}>— TOTAL semua obat —</option>
+        {% for o in obat_list %}
+        <option value="{{ o }}" {{ 'selected' if sel_obat==o }}>{{ o }}</option>
+        {% endfor %}
+      </select>
+        </div>
+        <div>
+            <label>Horizon (bulan ke depan)</label>
+            <select name="horizon" class="form-select" onchange="this.form.submit()">
+        {% for hval, hlabel in horizon_opts %}
+        <option value="{{ hval }}" {{ 'selected' if horizon==hval }}>{{ hlabel }}</option>
+        {% endfor %}
+      </select>
+        </div>
+        <div>
+            <label>Model</label>
+            <select name="model" class="form-select" onchange="this.form.submit()">
+        <option value="">Model aktif (default)</option>
+        {% for m in model_opts %}
+        <option value="{{ m.nama_model }}" {{ 'selected' if sel_model==m.nama_model }}>
+          v{{ m.version_id }} · {{ m.nama_model }} ({{ m.status }})</option>
+        {% endfor %}
+      </select>
+        </div>
+        <div><button class="btn" style="background:var(--green);color:#fff"><i class="bi bi-graph-up-arrow"></i> Tampilkan</button></div>
+    </form>
+</div>
+
+{% if data %}
+<div class="cards">
+    <div class="card-stat">
+        <div class="label">Model</div>
+        <div class="value" style="font-size:1.05rem">{{ data.model }}</div>
+    </div>
+    <div class="card-stat">
+        <div class="label">Rata-rata Historis</div>
+        <div class="value">{{ '%.0f'|format(data.avg_hist) }}</div><small class="muted">{{ data.satuan ~ '/bulan' if data.satuan else '/bulan' }}</small></div>
+    <div class="card-stat">
+        <div class="label">Rata-rata Forecast</div>
+        <div class="value">{{ '%.0f'|format(data.avg_fore) }}</div><small class="muted">{{ data.satuan ~ '/bulan' if data.satuan else '/bulan' }}</small></div>
+    {% if data.satuan %}
+    <div class="card-stat">
+        <div class="label">Satuan</div>
+        <div class="value" style="font-size:1.2rem">{{ data.satuan }}</div>
+    </div>{% else %}
+    <div class="card-stat">
+        <div class="label">Satuan</div>
+        <div class="value" style="font-size:1.05rem">Beragam satuan</div>
+        <small class="muted">mode TOTAL</small>
+    </div>{% endif %}
+    <div class="card-stat {{ 'green' if data.tren=='meningkat' else 'red' if data.tren=='menurun' else '' }}">
+        <div class="label">Tren</div>
+        <div class="value" style="font-size:1.2rem">
+            {% if data.tren=='meningkat' %}▲{% elif data.tren=='menurun' %}▼{% else %}≈{% endif %} {{ data.tren }}</div>
+        <small class="muted">{{ '%+.1f'|format(data.delta) }}% vs historis</small></div>
+</div>
+
+<div class="banner"><i class="bi bi-info-circle"></i> Pola pengeluaran <strong>{{ data.judul }}</strong>: data historis sampai
+    <strong>{{ data.last_period }}</strong>, lalu forecast {{ data.future_periods|length }} bulan ke depan berdasarkan asumsi model <strong>{{ data.model }}</strong>. Garis putus-putus = prediksi (ketidakpastian meningkat makin jauh ke depan).</div>
+
+<div class="panel">
+    <h2>Grafik Historis + Forecast</h2>
+    <div class="chart-box" style="height:360px"><canvas id="chartFore" data-chart="{{ chart_json|e }}"></canvas></div>
+</div>
+
+<div class="panel">
+    <h2>Tabel Prediksi per Periode</h2>
+    <table class="tbl">
+        <thead>
+            <tr>
+                <th>Periode</th>
+                <th class="num">Prediksi Demand</th>
+                <th>Satuan</th>
+                {% if sel_obat != '__TOTAL__' %}
+                <th class="num">ROP</th>
+                <th class="num">Safety Stock</th>
+                <th class="num">Jumlah Rekomendasi</th>
+                <th>Status</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in data.rows %}
+            <tr>
+                <td>{{ r.periode }}</td>
+                <td class="num"><strong>{{ '%.0f'|format(r.prediksi_demand or 0) }}</strong></td>
+                <td>{{ data.satuan or 'Beragam' }}</td>
+
+                {% if sel_obat != '__TOTAL__' %}
+                <td class="num">{{ '%.1f'|format(r.rop) if r.rop is not none else '-' }}</td>
+                <td class="num">{{ '%.1f'|format(r.safety_stock) if r.safety_stock is not none else '-' }}</td>
+                <td class="num">{{ '%.0f'|format(r.jumlah_rekomendasi) if r.jumlah_rekomendasi is not none else '-' }}</td>
+                <td>
+                    {% set cls = {'SEGERA RESTOK':'s-segera','PERLU DIPERHATIKAN':'s-perhatian','STOK AMAN':'s-aman'} %}
+                    <span class="badge-status {{ cls.get(r.status,'s-historis') }}">{{ r.status }}</span>
+                </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% if sel_obat == '__TOTAL__' %}
+    <small class="muted">Mode TOTAL menjumlahkan prediksi seluruh obat per bulan. Pilih satu obat untuk melihat rekomendasi restok per periode.</small> {% endif %}
+</div>
+{% else %}
+<div class="panel"><span class="muted">Obat tidak ditemukan.</span></div>
+{% endif %} {% endblock %} {% block scripts %}
+<script>
+    const D = JSON.parse(document.getElementById('chartFore').dataset.chart);
+    new Chart(document.getElementById('chartFore'), {
+        data: {
+            labels: D.labels,
+            datasets: [{
+                type: 'line',
+                label: 'Historis',
+                data: D.hist,
+                borderColor: '#2e7d32',
+                backgroundColor: 'rgba(46,125,50,.10)',
+                fill: true,
+                tension: .25,
+                spanGaps: false,
+                pointRadius: 3
+            }, {
+                type: 'line',
+                label: 'Forecast',
+                data: D.fore,
+                borderColor: '#1565c0',
+                borderDash: [7, 5],
+                backgroundColor: 'rgba(21,101,192,.06)',
+                fill: true,
+                tension: .25,
+                spanGaps: true,
+                pointRadius: 3
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
+            plugins: {
+                legend: {
+                    position: 'top'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Demand'
+                    }
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

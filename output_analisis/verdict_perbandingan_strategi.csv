@@ -1,0 +1,5 @@
+kategori_demand,1_baseline,2_hibrid_T11,3_multimetode_T12,4_pooled_T13
+smooth,65.5,65.5,83.6,65.0
+erratic,67.5,53.9,65.0,91.9
+intermittent,100.0,100.0,100.0,150.0
+lumpy,159.7,159.7,411.7,400.0

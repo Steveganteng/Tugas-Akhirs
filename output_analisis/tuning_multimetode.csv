@@ -1,0 +1,112 @@
+,kategori_demand,metode_terbaik,parameter,WAPE_val,WAPE_test,mutu
+HUFABETHAMINE SIRUP,erratic,SES,alpha=0.65,52.9,9.1,Excellent
+CEFIXIME SIRUP,intermittent,Holt,"a=0.90,b=0.10",65.8,10.7,Good
+SANGOBION KAPSUL,erratic,SBA,"az=0.50,ap=0.20",18.8,13.9,Good
+AMLODIPINE 5 MG,smooth,MA,k=4,14.5,16.7,Good
+WOODS EKSPEKTORAN SIRUP 100ML,smooth,SBA,"az=0.50,ap=0.50",42.4,18.9,Good
+KETOROLAC INJEKSI,erratic,Croston,"az=0.05,ap=0.30",77.6,21.3,Bad
+AMLODIPINE 10 MG TABLET,smooth,SBA,"az=0.05,ap=0.20",43.0,23.7,Bad
+URINTER TABLET,intermittent,MA,k=2,65.4,30.7,Bad
+ASAM MEFENAMAT 500 MG TABLET,erratic,MA,k=3,67.5,42.4,Bad
+COMBANTRIN 250 MG TABLET,intermittent,SBA,"az=0.05,ap=0.05",74.7,43.3,Bad
+FG TROCES TABLET,erratic,Naive,-,60.2,43.3,Bad
+CETIRIZINE 10 MG TABLET,smooth,TSB,"a=0.30,b=0.05",37.8,45.4,Bad
+ALLOPURINOL TABLET,intermittent,Holt,"a=0.50,b=0.05",95.4,56.3,Tidak layak
+HISTIGO (BETAHISTIN) 6 MG TABLET,smooth,SBA,"az=0.05,ap=0.50",50.3,57.6,Tidak layak
+SCOPMA PLUS (HYOSCINE + PARASETAMOL) TABLET,erratic,SBA,"az=0.50,ap=0.50",67.1,58.4,Tidak layak
+AMBEVEN TABLET,intermittent,MA,k=3,71.7,61.1,Tidak layak
+OMEPRAZOLE KAPSUL,erratic,Naive,-,57.6,63.6,Tidak layak
+CEFADROXIL 500MG KAPSUL,erratic,SBA,"az=0.05,ap=0.50",74.5,66.4,Tidak layak
+AZITROMICYN TABLET,erratic,MA,k=2,53.4,73.7,Tidak layak
+AMOXCICILIN SIRUP,intermittent,Croston,"az=0.05,ap=0.05",65.1,75.8,Tidak layak
+DOMPERIDONE TABLET,erratic,SBA,"az=0.05,ap=0.05",81.4,76.7,Tidak layak
+HEVIT PLUS TAB,intermittent,Naive,-,100.0,78.7,Tidak layak
+RANITIDINE TABLET,smooth,SES,alpha=0.05,53.4,83.2,Tidak layak
+CIPROFLOXASIN 500 MG TABLET,smooth,SES,alpha=0.85,45.5,84.0,Tidak layak
+ACETYLCYSTEIN KAP,smooth,SES,alpha=0.85,30.5,88.1,Tidak layak
+GRANTUSIF TABLET,smooth,Croston,"az=0.05,ap=0.50",53.4,89.8,Tidak layak
+ORALITE,smooth,SES,alpha=0.50,23.0,95.4,Tidak layak
+METHYLPREDNISOLONE 4 MG TABLET,erratic,Croston,"az=0.20,ap=0.05",53.9,95.8,Tidak layak
+WOODS ANTITUSIVE SIRUP 100ML,lumpy,Holt,"a=0.70,b=0.05",81.0,100.0,Tidak layak
+HUFAGRIP BP HIJAU SIRUP,intermittent,Croston,"az=0.50,ap=0.05",89.9,100.0,Tidak layak
+BENOSON-N 15 G SALEP,intermittent,SBA,"az=0.05,ap=0.10",101.0,100.0,Tidak layak
+KENALOG SALEP,intermittent,SBA,"az=0.40,ap=0.05",69.7,100.0,Tidak layak
+ACYCLOVIR TABLET,intermittent,Croston,"az=0.50,ap=0.30",40.4,100.0,Tidak layak
+ACYCLOVIR SALEP,intermittent,Croston,"az=0.05,ap=0.05",74.3,100.0,Tidak layak
+SIMVASTATIN 20 MG TABLET,intermittent,SES,alpha=0.05,114.3,100.4,Tidak layak
+SALBUTAMOL 2 MG TABLET,lumpy,SES,alpha=0.05,126.7,101.5,Tidak layak
+MADU TJ SACHET,lumpy,SES,alpha=0.05,95.3,104.2,Tidak layak
+NEUROBION PUTIH TABLET,smooth,Croston,"az=0.50,ap=0.05",60.4,118.4,Tidak layak
+ERLAMICETIN TETES TELINGA,intermittent,MA,k=3,30.8,133.3,Tidak layak
+ERLAMICETIN TETES MATA,intermittent,Croston,"az=0.05,ap=0.50",82.7,153.2,Tidak layak
+LANSOPRAZOLE KAPSUL,lumpy,SBA,"az=0.10,ap=0.50",72.7,176.1,Tidak layak
+BECOMZET TABLET,erratic,Holt,"a=0.50,b=0.30",34.8,184.1,Tidak layak
+L-BIO,intermittent,MA,k=2,67.0,190.6,Tidak layak
+INTERZINC SIRUP,intermittent,Naive,-,100.0,200.0,Tidak layak
+TRANSAMIN (ASAM TRANEXAMAT 500MG) TABLET,erratic,Holt,"a=0.50,b=0.30",46.6,213.3,Tidak layak
+KETOCONAZOLE SALEP,lumpy,SES,alpha=0.05,71.9,293.1,Tidak layak
+"Verban elastis 10cm x 4,5m",intermittent,Naive,-,45.5,350.0,Tidak layak
+KETONAZOLE 200MG TABLET,lumpy,SES,alpha=0.55,64.5,411.7,Tidak layak
+NEUROBION FORTE/PINK TABLET,lumpy,SBA,"az=0.50,ap=0.05",37.8,529.2,Tidak layak
+HYDROCORTISONE SALEP,lumpy,Holt,"a=0.90,b=0.10",78.8,532.8,Tidak layak
+CAIRAN INFUS NACL 500ML,lumpy,Croston,"az=0.30,ap=0.05",62.9,539.4,Tidak layak
+ARKAVIT-C TABLET,lumpy,Naive,-,100.0,757.1,Tidak layak
+METRONIDAZOLE 500MG TABLET,smooth,Croston,"az=0.05,ap=0.30",37.4,811.4,Tidak layak
+PROMEDEX TAB,lumpy,Holt,"a=0.90,b=0.30",54.4,1340.3,Tidak layak
+DEXAMETHASONE INJEKSI,erratic,MA,k=2,71.4,1925.0,Tidak layak
+AMBROXOL TABLET,lumpy,Holt,"a=0.90,b=0.30",84.1,,N/A
+AMOXICILLIN TABLET,erratic,TSB,"a=0.30,b=0.05",222.1,,N/A
+BECEFORT TAB,lumpy,Holt,"a=0.50,b=0.30",117.2,,N/A
+BENOSON-M SALEP,lumpy,SES,alpha=0.05,97.3,,N/A
+BISOPROROL 5 TABLET,lumpy,Croston,"az=0.30,ap=0.05",69.6,,N/A
+BUSCOPAN INJEKSI,intermittent,SBA,"az=0.05,ap=0.10",82.9,,N/A
+CAIRAN INFUS RINGER LAKTAT 500ML,intermittent,MA,k=4,86.1,,N/A
+CALLUSOL,intermittent,SES,alpha=0.80,107.8,,N/A
+CALORTUSIN TABLET,lumpy,Naive,-,200.0,,N/A
+CANDESARTAN 16MG TAB,data tidak cukup,SES,alpha=0.05,105.0,,N/A
+CANDESARTAN 8MG TAB,data tidak cukup,Naive,-,100.0,,N/A
+"CAPTOPRIL 12,5MG TABLET",intermittent,SES,alpha=0.05,155.6,,N/A
+CENDOXITROL TETES MATA STERIL,intermittent,SBA,"az=0.50,ap=0.50",71.4,,N/A
+COUNTERPAIN CREAM 30G,intermittent,TSB,"a=0.05,b=0.30",79.8,,N/A
+CTM TABLET,lumpy,Naive,-,200.0,,N/A
+CURVIT TABLET,lumpy,Holt,"a=0.90,b=0.05",40.5,,N/A
+Candesartan 8mg Tab,intermittent,Holt,"a=0.10,b=0.05",100.0,,N/A
+DIAFORM TABLET,intermittent,Holt,"a=0.50,b=0.05",32.9,,N/A
+DOMPERIDONE SIRUP,intermittent,Naive,-,66.7,,N/A
+DULCOLAX 5MG TABLET,intermittent,SES,alpha=0.05,102.6,,N/A
+ERYTHROMYCIN 500 MG TABLET,lumpy,SBA,"az=0.05,ap=0.50",101.9,,N/A
+FARSIFEN PLUS (PARASETAMOL + IBUPROFEN) TABLET,lumpy,Croston,"az=0.50,ap=0.05",97.2,,N/A
+GABAPENTIN 100MG,data tidak cukup,SES,alpha=0.05,118.5,,N/A
+GENTAMICYN SALEP,smooth,MA,k=2,129.7,,N/A
+HOT IN CREAM  60G,intermittent,Naive,-,328.6,,N/A
+IBUPROFEN 400MG TABLET,lumpy,Holt,"a=0.90,b=0.05",19.1,,N/A
+IMBOOST KIDS SIRUP,intermittent,TSB,"a=0.30,b=0.20",83.9,,N/A
+INFUSET MAKRO,data tidak cukup,SES,alpha=0.05,114.3,,N/A
+INTRIZIN TAB (CETIRIZIN),lumpy,Holt,"a=0.90,b=0.05",48.2,,N/A
+KASA STERIL,lumpy,SES,alpha=0.05,106.9,,N/A
+LACTO B,intermittent,TSB,"a=0.30,b=0.05",85.5,,N/A
+METHYLPREDNISOLON 8MG TAB,lumpy,SBA,"az=0.05,ap=0.50",100.4,,N/A
+MICROLAX RECTAL,data tidak cukup,Naive,-,100.0,,N/A
+NEO-PROTIFED (TRIPROLIDIN + PSEUDOEFEDRIN) TAB,intermittent,SBA,"az=0.40,ap=0.20",38.8,,N/A
+NEURALGIN TABLET,intermittent,SES,alpha=0.05,149.2,,N/A
+OMEGTAMINE TAB,intermittent,SBA,"az=0.05,ap=0.05",90.9,,N/A
+ONDANSETRON 4MG TABLET,intermittent,Holt,"a=0.10,b=0.05",100.0,,N/A
+ONDANSETRON INJEKSI,intermittent,SES,alpha=0.05,79.7,,N/A
+PARACETAMOL INFUS,intermittent,SES,alpha=0.05,127.7,,N/A
+PECTORIN EXP SIRUP,data tidak cukup,SES,alpha=0.05,105.0,,N/A
+PLANTACYD SIRUP,lumpy,Holt,"a=0.90,b=0.05",58.7,,N/A
+POLYSILANE 100ML,data tidak cukup,SES,alpha=0.05,105.0,,N/A
+POLYSILANE TABLET,lumpy,TSB,"a=0.10,b=0.50",81.1,,N/A
+PULMICORT NEBULIZER,intermittent,SES,alpha=0.05,108.1,,N/A
+SANMOL FORTE SIRUP,intermittent,Croston,"az=0.50,ap=0.50",48.0,,N/A
+SCABICID (PERMEHETRIN 5%) CREAM 10G,intermittent,SES,alpha=0.05,112.2,,N/A
+SIMVASTATIN 10 MG TABLET,data tidak cukup,SES,alpha=0.05,122.6,,N/A
+Sanadryl DMP 120 ML,intermittent,Holt,"a=0.90,b=0.10",93.3,,N/A
+TEMPRA SIRUP,data tidak cukup,SES,alpha=0.05,118.5,,N/A
+TIFALSIC (PARASETAMOL + IBUPROFEN) TABLET,intermittent,SES,alpha=0.05,155.6,,N/A
+TREMENZA TAB,data tidak cukup,Naive,-,100.0,,N/A
+TRIANTA TABLET,lumpy,Holt,"a=0.90,b=0.05",65.9,,N/A
+VENTOLIN NEBULLIZER,intermittent,SBA,"az=0.05,ap=0.05",100.6,,N/A
+"Verban elastis 7,5cm x 4,5m",lumpy,Naive,-,400.0,,N/A
+ZEGAVIT TABLET,intermittent,MA,k=2,34.7,,N/A
+ZINK TABLET,lumpy,Holt,"a=0.10,b=0.05",100.0,,N/A

@@ -1,0 +1,176 @@
+obat,kategori_demand,metode_terbaik,WAPE_test,parameter,ABC,VEN,AMC,safety_stock,Min,Max,stok_terkini,status,perlu_pesan,skor,kritis
+DIAFORM TABLET,intermittent,-,,-,A,V,212.4,321,533,879,4.0,DI BAWAH MIN,875.0,6,True
+ORALITE,smooth,SES,69.76009202593502,alpha=0.39,A,V,112.8,105,218,374,20.0,DI BAWAH MIN,354.0,6,True
+METHYLPREDNISOLONE 4 MG TABLET,erratic,SES,32.20137166720002,alpha=0.2,A,E,761.4,1145,1907,3142,1040.0,DI BAWAH MIN,2102.0,5,True
+BECOMZET TABLET,erratic,SES,104.35167340016433,alpha=0.6,A,E,628.5,923,1551,2562,678.0,DI BAWAH MIN,1884.0,5,True
+NEO-PROTIFED (TRIPROLIDIN + PSEUDOEFEDRIN) TAB,intermittent,-,,-,A,E,554.8,744,1299,2162,390.0,DI BAWAH MIN,1772.0,5,True
+PROMEDEX TAB,lumpy,SBA,100.45655496945417,"az=0.05,ap=0.05",A,E,380.6,1264,1645,2548,1533.0,DI BAWAH MIN,1015.0,5,True
+OMEPRAZOLE KAPSUL,erratic,SES,49.654927546181824,alpha=0.6,A,E,337.5,753,1090,1739,890.0,DI BAWAH MIN,849.0,5,True
+BECEFORT TAB,lumpy,-,,-,A,E,166.2,327,493,794,10.0,DI BAWAH MIN,784.0,5,True
+NEUROBION PUTIH TABLET,smooth,SES,27.996152933208208,alpha=0.01,A,E,240.8,325,565,940,250.0,DI BAWAH MIN,690.0,5,True
+TRIANTA TABLET,lumpy,-,,-,A,E,128.8,268,397,637,5.0,DI BAWAH MIN,632.0,5,True
+GRANTUSIF TABLET,smooth,SES,80.08975769967245,alpha=0.05,A,E,318.8,382,701,1178,665.0,DI BAWAH MIN,513.0,5,True
+NEUROBION FORTE/PINK TABLET,lumpy,SBA,191.88354830581042,"az=0.95,ap=0.05",A,E,117.0,318,435,684,217.0,DI BAWAH MIN,467.0,5,True
+CEFADROXIL 500MG KAPSUL,erratic,SES,150.5077407023729,alpha=0.6,A,E,202.1,404,606,976,565.0,DI BAWAH MIN,411.0,5,True
+ZEGAVIT TABLET,intermittent,-,,-,A,E,139.5,182,322,537,270.0,DI BAWAH MIN,267.0,5,True
+DEXAMETHASONE TABLET,data tidak cukup,aturan stok,,-,B,E,936.0,0,936,1872,692.0,DI BAWAH MIN,1180.0,4,True
+SELCOM C TABLET,lumpy,-,,-,B,E,82.5,267,350,543,15.0,DI BAWAH MIN,528.0,4,True
+ARKAVIT-C TABLET,lumpy,SBA,100.12397157816004,"az=0.05,ap=0.05",B,E,50.0,241,291,441,0.0,DI BAWAH MIN,441.0,4,True
+POLYSILANE TABLET,lumpy,-,,-,B,E,50.0,179,229,353,40.0,DI BAWAH MIN,313.0,4,True
+INTRIZIN TAB (CETIRIZIN),lumpy,-,,-,B,E,95.0,201,296,474,170.0,DI BAWAH MIN,304.0,4,True
+KETOCONAZOLE SALEP,lumpy,SBA,419.16268920753623,"az=0.3,ap=0.95",C,V,13.4,28,41,66,26.0,DI BAWAH MIN,40.0,4,True
+LACTO B,intermittent,-,,-,C,V,6.7,16,23,36,9.0,DI BAWAH MIN,27.0,4,True
+SCABICID (PERMEHETRIN 5%) CREAM 10G,intermittent,-,,-,C,V,0.6,2,3,4,2.0,DI BAWAH MIN,2.0,4,True
+SCABIMITE SALEB 30G,data tidak cukup,aturan stok,,-,C,V,0.2,1,2,2,0.0,DI BAWAH MIN,2.0,4,True
+SCABIMITE SALEB 10G,data tidak cukup,aturan stok,,-,C,V,0.1,1,1,1,0.0,DI BAWAH MIN,1.0,4,True
+Betadine 15 ml,data tidak cukup,aturan stok,,-,C,V,0.1,1,1,1,1.0,DI BAWAH MIN,0.0,4,True
+ULTRAFIX,data tidak cukup,aturan stok,,-,C,V,0.0,0,0,0,0.0,DI BAWAH MIN,0.0,4,True
+superhoid Supp,data tidak cukup,aturan stok,,-,C,V,0.0,0,0,0,0.0,DI BAWAH MIN,0.0,4,True
+HISTIGO (BETAHISTIN) 6 MG TABLET,smooth,SES,61.16815256323931,alpha=0.17,B,N,72.2,78,150,255,62.0,DI BAWAH MIN,193.0,3,True
+MADU TJ SACHET,lumpy,SBA,100.38375590197224,"az=0.05,ap=0.05",C,E,9.8,40,50,76,7.0,DI BAWAH MIN,69.0,3,True
+TREMENZA TAB,data tidak cukup,aturan stok,,-,C,E,16.7,92,108,163,100.0,DI BAWAH MIN,63.0,3,True
+AMBEVEN TABLET,intermittent,Croston,36.81599241775804,"az=0.95,ap=0.05",C,E,25.0,36,61,101,40.0,DI BAWAH MIN,61.0,3,True
+CURVIT TABLET,lumpy,-,,-,C,E,9.2,25,34,53,15.0,DI BAWAH MIN,38.0,3,True
+HOT IN CREAM  60G,intermittent,-,,-,C,E,6.9,15,22,36,7.0,DI BAWAH MIN,29.0,3,True
+KETOROLAC INJEKSI,erratic,SES,31.75573584850799,alpha=0.04,C,E,8.0,15,23,37,9.0,DI BAWAH MIN,28.0,3,True
+DEXAMETHASONE INJEKSI,erratic,SES,363.3643929600001,alpha=0.6,C,E,5.7,17,22,35,10.0,DI BAWAH MIN,25.0,3,True
+HUFABETHAMINE SIRUP,erratic,SES,8.135617331200002,alpha=0.6,C,E,7.5,10,17,29,4.0,DI BAWAH MIN,25.0,3,True
+FIBUMIN KAP,data tidak cukup,aturan stok,,-,C,E,3.3,19,22,33,10.0,DI BAWAH MIN,23.0,3,True
+BUSCOPAN INJEKSI,intermittent,-,,-,C,E,4.4,8,12,20,2.0,DI BAWAH MIN,18.0,3,True
+WOODS ANTITUSIVE SIRUP 100ML,lumpy,SBA,1000.2298149144492,"az=0.05,ap=0.05",C,E,3.1,9,12,18,1.0,DI BAWAH MIN,17.0,3,True
+WOODS EKSPEKTORAN SIRUP 100ML,smooth,SES,140.53202477271782,alpha=0.01,C,E,5.9,7,13,22,6.0,DI BAWAH MIN,16.0,3,True
+COUNTERPAIN CREAM 30G,intermittent,-,,-,C,E,3.5,9,13,20,5.0,DI BAWAH MIN,15.0,3,True
+HUFAGRIP BP HIJAU SIRUP,intermittent,Croston,100.0,"az=0.05,ap=0.95",C,E,3.9,8,12,19,6.0,DI BAWAH MIN,13.0,3,True
+LERZIN (CETIRIZIN) SIRUP,data tidak cukup,aturan stok,,-,C,E,10.0,0,10,20,8.0,DI BAWAH MIN,12.0,3,True
+PLANTACYD SIRUP,lumpy,-,,-,C,E,2.1,5,8,12,1.0,DI BAWAH MIN,11.0,3,True
+CENDO LYTERS TETES MATA,data tidak cukup,aturan stok,,-,C,E,1.7,4,6,9,0.0,DI BAWAH MIN,9.0,3,True
+IMBOOST KIDS SIRUP,intermittent,-,,-,C,E,1.8,4,6,10,3.0,DI BAWAH MIN,7.0,3,True
+SANMOL FORTE SIRUP,intermittent,-,,-,C,E,2.0,3,5,9,3.0,DI BAWAH MIN,6.0,3,True
+Sanadryl DMP 120 ML,intermittent,-,,-,C,E,2.1,6,9,13,7.0,DI BAWAH MIN,6.0,3,True
+DOMPERIDONE SIRUP,intermittent,-,,-,C,E,1.3,3,4,7,2.0,DI BAWAH MIN,5.0,3,True
+ERLAMICETIN TETES MATA,intermittent,SBA,100.0,"az=0.05,ap=0.2",C,E,1.7,3,5,8,3.0,DI BAWAH MIN,5.0,3,True
+ERLAMICETIN TETES TELINGA,intermittent,SBA,100.0,"az=0.95,ap=0.55",C,E,1.5,2,4,6,1.0,DI BAWAH MIN,5.0,3,True
+BIOLYSIN KIDS TAB KUNYAH,data tidak cukup,aturan stok,,-,C,E,0.4,2,2,3,1.0,DI BAWAH MIN,2.0,3,True
+PARACETAMOL INFUS,intermittent,-,,-,C,E,0.2,1,1,2,1.0,DI BAWAH MIN,1.0,3,True
+HOT IN DCL SALEP 30 gr,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,0.0,DI BAWAH MIN,0.0,3,True
+SILADEX BIRU SIRUP,data tidak cukup,aturan stok,,-,C,E,0.2,1,2,2,2.0,DI BAWAH MIN,0.0,3,True
+GENTAMICYN SALEP,smooth,SES,,alpha=0.3,C,N,18.8,19,38,64,6.0,DI BAWAH MIN,58.0,2,True
+KASA STERIL,lumpy,-,,-,C,N,13.0,48,61,93,44.0,DI BAWAH MIN,49.0,2,True
+ACYCLOVIR TABLET,intermittent,Croston,100.0,"az=0.35,ap=0.3",A,V,226.3,350,576,947,1404.0,aman,0.0,6,False
+CTM TABLET,lumpy,-,,-,A,V,216.7,722,939,1455,1600.0,aman,0.0,6,False
+METRONIDAZOLE 500MG TABLET,smooth,SES,456.14963123761345,alpha=0.99,A,V,114.2,142,256,429,340.0,aman,0.0,6,False
+ACETYLCYSTEIN KAP,smooth,SES,88.10762525212283,alpha=0.85,A,E,629.5,491,1121,1954,1170.0,aman,0.0,5,False
+AMLODIPINE 10 MG TABLET,smooth,SES,23.809555733482824,alpha=0.05,B,V,45.8,40,85,147,477.0,aman,0.0,5,False
+AMLODIPINE 5 MG,smooth,SES,17.87065228819292,alpha=0.28,B,V,90.5,33,123,227,325.0,aman,0.0,5,False
+ASAM MEFENAMAT 500 MG TABLET,erratic,SES,25.91814154286799,alpha=0.44,A,E,277.5,495,773,1255,960.0,aman,0.0,5,False
+CETIRIZINE 10 MG TABLET,smooth,SES,37.58392473896467,alpha=0.11,A,E,343.8,394,737,1244,925.0,aman,0.0,5,False
+CIPROFLOXASIN 500 MG TABLET,smooth,SES,38.81445267523077,alpha=0.01,B,V,79.0,82,161,274,652.0,aman,0.0,5,False
+DOMPERIDONE TABLET,erratic,SES,79.03741905088047,alpha=0.06,A,E,322.7,493,815,1342,1030.0,aman,0.0,5,False
+METHYLPREDNISOLON 8MG TAB,lumpy,-,,-,A,E,385.1,1301,1686,2609,2040.0,aman,0.0,5,False
+OMEGTAMINE TAB,intermittent,-,,-,A,E,115.3,185,301,493,1137.0,aman,0.0,5,False
+RANITIDINE TABLET,smooth,SES,81.92161631814845,alpha=0.01,A,E,438.8,501,940,1586,1000.0,aman,0.0,5,False
+SCOPMA PLUS (HYOSCINE + PARASETAMOL) TABLET,erratic,SES,104.80807895445545,alpha=0.6,A,E,210.2,333,543,891,641.0,aman,0.0,5,False
+ACYCLOVIR SALEP,intermittent,SBA,138.48286939341634,"az=0.95,ap=0.95",C,V,15.7,24,39,65,63.0,aman,0.0,4,False
+AMBROXOL TABLET,lumpy,-,,-,B,E,90.0,361,451,690,1690.0,aman,0.0,4,False
+AMOXICILLIN TABLET,erratic,SES,,alpha=0.04,B,E,131.7,197,329,543,644.0,aman,0.0,4,False
+AZITROMICYN TABLET,erratic,SES,58.239245913893136,alpha=0.4,B,E,31.2,53,84,137,146.0,aman,0.0,4,False
+BENOSON-M SALEP,lumpy,-,,-,C,V,0.9,3,4,6,5.0,aman,0.0,4,False
+"BISOPROLOL 2,5MG",data tidak cukup,aturan stok,,-,C,V,0.0,0,0,0,590.0,aman,0.0,4,False
+BISOPROROL 5 TABLET,lumpy,-,,-,C,V,14.6,34,48,77,325.0,aman,0.0,4,False
+CAIRAN INFUS NACL 500ML,lumpy,SBA,525.4763153705079,"az=0.95,ap=0.05",C,V,6.8,14,21,34,23.0,aman,0.0,4,False
+CALORTUSIN TABLET,lumpy,-,,-,B,E,60.8,283,344,522,510.0,aman,0.0,4,False
+CANDESARTAN 16MG TAB,data tidak cukup,aturan stok,,-,C,V,2.5,14,17,25,170.0,aman,0.0,4,False
+CANDESARTAN 8MG TAB,data tidak cukup,aturan stok,,-,C,V,0.8,5,6,9,290.0,aman,0.0,4,False
+"CAPTOPRIL 12,5MG TABLET",intermittent,-,,-,C,V,1.2,5,7,10,201.0,aman,0.0,4,False
+CEFIXIME 200MG,data tidak cukup,aturan stok,,-,B,E,213.0,352,565,924,1146.0,aman,0.0,4,False
+Candesartan 8mg Tab,intermittent,-,,-,C,V,11.6,40,52,79,300.0,aman,0.0,4,False
+FG TROCES TABLET,erratic,SES,33.52309237251911,alpha=0.02,B,E,68.1,124,192,311,447.0,aman,0.0,4,False
+GABAPENTIN 100MG,data tidak cukup,aturan stok,,-,C,V,0.8,5,6,9,90.0,aman,0.0,4,False
+HANSAPLAST PLESTER,data tidak cukup,aturan stok,,-,C,V,0.0,0,0,0,337.0,aman,0.0,4,False
+HEVIT PLUS TAB,intermittent,Croston,80.07706335666805,"az=0.05,ap=0.05",B,E,73.3,244,317,492,320.0,aman,0.0,4,False
+HYDROCORTISON CREAM 1%,data tidak cukup,aturan stok,,-,C,V,0.1,1,1,2,18.0,aman,0.0,4,False
+INTERZINC SIRUP,intermittent,Croston,100.0,"az=0.05,ap=0.05",C,V,0.2,1,1,2,5.0,aman,0.0,4,False
+KETONAZOLE 200MG TABLET,lumpy,Croston,646.5734569961635,"az=0.2,ap=0.35",C,V,20.8,49,70,111,340.0,aman,0.0,4,False
+L-BIO,intermittent,Croston,100.0,"az=0.05,ap=0.05",C,V,7.8,20,28,44,86.0,aman,0.0,4,False
+LACYS (ACETYLSISTEIN),data tidak cukup,aturan stok,,-,B,E,249.7,583,833,1324,3204.0,aman,0.0,4,False
+PAMOL TAB 500MG (PARACETAMOL TAB),data tidak cukup,aturan stok,,-,B,E,901.0,0,901,1802,3886.0,aman,0.0,4,False
+RANIGEN (RANITIDIN) TABLET,data tidak cukup,aturan stok,,-,C,V,0.0,0,0,0,2338.0,aman,0.0,4,False
+SANGOBION KAPSUL,erratic,SES,28.07205416617545,alpha=0.38,B,E,68.8,113,182,297,380.0,aman,0.0,4,False
+TRANSAMIN (ASAM TRANEXAMAT 500MG) TABLET,erratic,SES,152.34248321113043,alpha=0.6,B,E,65.5,102,167,275,214.0,aman,0.0,4,False
+TUSELIX (TRIPROLIDIN =~ PSEUDOEFEDRIN) TAB,data tidak cukup,aturan stok,,-,B,E,51.3,281,333,500,374.0,aman,0.0,4,False
+URINTER TABLET,intermittent,Croston,40.048423040766586,"az=0.05,ap=0.65",B,E,25.8,40,66,108,290.0,aman,0.0,4,False
+"Verban elastis 10cm x 4,5m",intermittent,SBA,193.84859502095134,"az=0.05,ap=0.95",C,V,1.6,4,6,9,13.0,aman,0.0,4,False
+ZINK TABLET,lumpy,-,,-,C,V,9.2,46,55,83,190.0,aman,0.0,4,False
+PARACETAMOL 500MG TABLET,data tidak cukup,aturan stok,,-,C,V,0.0,0,0,0,,stok tak diketahui,,4,False
+ACITRAL TAB,data tidak cukup,aturan stok,,-,C,E,11.7,44,55,85,180.0,aman,0.0,3,False
+ALLOPURINOL TABLET,intermittent,SBA,45.50608277282087,"az=0.95,ap=0.5",C,E,13.8,27,41,65,565.0,aman,0.0,3,False
+AMBROXOL SIRUP,data tidak cukup,aturan stok,,-,C,E,3.0,0,3,6,28.0,aman,0.0,3,False
+AMOXCICILIN SIRUP,intermittent,SBA,42.23263912933234,"az=0.3,ap=0.95",C,E,2.0,3,5,8,12.0,aman,0.0,3,False
+ANTASIDA TABLET,data tidak cukup,aturan stok,,-,C,E,20.4,112,133,199,1155.0,aman,0.0,3,False
+ANTRAIN TAB (METAMIZOLE SODIUM),data tidak cukup,aturan stok,,-,C,E,3.3,16,19,29,150.0,aman,0.0,3,False
+BETADINE KUMUR,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,10.0,aman,0.0,3,False
+CAIRAN INFUS RINGER LAKTAT 500ML,intermittent,-,,-,C,E,1.8,5,7,10,21.0,aman,0.0,3,False
+CEFADROXIL 250MG SIRUP,data tidak cukup,aturan stok,,-,C,E,0.1,1,1,1,8.0,aman,0.0,3,False
+CEFIXIME SIRUP,intermittent,Croston,38.943748259334455,"az=0.05,ap=0.95",C,E,2.1,4,6,9,13.0,aman,0.0,3,False
+CENDOXITROL TETES MATA STERIL,intermittent,-,,-,C,E,1.6,3,4,7,12.0,aman,0.0,3,False
+CETIRIZINE SIRUP,data tidak cukup,aturan stok,,-,C,E,1.2,6,7,11,8.0,aman,0.0,3,False
+DULCOLAX 5MG TABLET,intermittent,-,,-,C,E,4.8,16,21,33,50.0,aman,0.0,3,False
+Disposible syringe 3cc,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,300.0,aman,0.0,3,False
+ERYTHROMYCIN 500 MG TABLET,lumpy,-,,-,C,E,14.2,47,61,95,399.0,aman,0.0,3,False
+EXTROPECT (AMBROXOL) SIRUP,data tidak cukup,aturan stok,,-,C,E,0.2,2,2,3,28.0,aman,0.0,3,False
+Erlamycetin Saleb Mata,data tidak cukup,aturan stok,,-,C,E,0.8,3,3,5,20.0,aman,0.0,3,False
+FLUTAMOL TABLET,lumpy,-,,-,C,E,10.8,55,66,99,570.0,aman,0.0,3,False
+Gencinolon,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,18.0,aman,0.0,3,False
+IBUPROFEN 400MG TABLET,lumpy,-,,-,B,N,72.2,138,211,340,300.0,aman,0.0,3,False
+"ILIADIN SPRAY 0,05%",data tidak cukup,aturan stok,,-,C,E,0.1,1,1,1,2.0,aman,0.0,3,False
+IMBOOST TABLET,data tidak cukup,aturan stok,,-,C,E,93.0,218,311,493,375.0,aman,0.0,3,False
+Infuset Dewasa,data tidak cukup,aturan stok,,-,C,E,0.5,3,3,5,21.0,aman,0.0,3,False
+KALBION TAB,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,300.0,aman,0.0,3,False
+KENALOG SALEP,intermittent,Croston,100.0,"az=0.95,ap=0.05",C,E,1.2,3,4,6,8.0,aman,0.0,3,False
+Kasa Non Steril,data tidak cukup,aturan stok,,-,C,E,0.4,3,3,5,16.0,aman,0.0,3,False
+LANSOPRAZOLE KAPSUL,lumpy,SBA,136.0579465126375,"az=0.25,ap=0.95",C,E,17.5,33,50,81,180.0,aman,0.0,3,False
+LASAL SIRUP,data tidak cukup,aturan stok,,-,C,E,0.2,1,2,2,5.0,aman,0.0,3,False
+LIBROFED (TRIPROLIDIN =~ PSEUDOEFEDRIN) TAB,data tidak cukup,aturan stok,,-,C,E,12.5,69,81,122,1650.0,aman,0.0,3,False
+MICROLAX RECTAL,data tidak cukup,aturan stok,,-,C,E,0.2,1,2,2,10.0,aman,0.0,3,False
+NATRIUM DIKLOFENAK 50 MG TAB,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,2046.0,aman,0.0,3,False
+NEURALGIN TABLET,intermittent,-,,-,C,E,2.5,10,13,19,230.0,aman,0.0,3,False
+Norages Injeksi,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,51.0,aman,0.0,3,False
+ONDANSETRON 4MG TABLET,intermittent,-,,-,C,E,12.8,36,49,76,140.0,aman,0.0,3,False
+ONDANSETRON INJEKSI,intermittent,-,,-,C,E,3.8,8,12,19,51.0,aman,0.0,3,False
+PROMAVIT TABLET,data tidak cukup,aturan stok,,-,C,E,1.2,7,9,13,10.0,aman,0.0,3,False
+PROME SIRUP,lumpy,-,,-,C,E,2.8,13,16,23,29.0,aman,0.0,3,False
+PULMICORT NEBULIZER,intermittent,-,,-,C,E,0.3,2,2,3,6.0,aman,0.0,3,False
+RANITIDINE INJEKSI,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,143.0,aman,0.0,3,False
+RHINOS TABLET,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,538.0,aman,0.0,3,False
+SALBUTAMOL 2 MG TABLET,lumpy,Croston,159.71776779987175,"az=0.05,ap=0.05",C,E,7.1,25,32,50,155.0,aman,0.0,3,False
+SANMOL SIRUP,data tidak cukup,aturan stok,,-,C,E,1.0,2,3,5,38.0,aman,0.0,3,False
+SCOPMA TAB (HYOSCINE BUTYLBROMIDE),data tidak cukup,aturan stok,,-,C,E,1.1,6,7,10,480.0,aman,0.0,3,False
+SUCRALFATE SIRUP,lumpy,-,,-,C,E,1.8,6,7,11,10.0,aman,0.0,3,False
+Sanadryl Ekspektoran 120 ml,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,28.0,aman,0.0,3,False
+THROMBOPOP Gel,data tidak cukup,aturan stok,,-,C,E,0.5,3,3,5,10.0,aman,0.0,3,False
+TIFALSIC (PARASETAMOL + IBUPROFEN) TABLET,intermittent,-,,-,C,E,2.5,10,13,19,598.0,aman,0.0,3,False
+VENTOLIN NEBULLIZER,intermittent,-,,-,C,E,1.3,4,5,8,8.0,aman,0.0,3,False
+"Verban elastis 15cm x 4,5m",intermittent,-,,-,C,E,1.8,8,10,15,16.0,aman,0.0,3,False
+"Verban elastis 7,5cm x 4,5m",lumpy,-,,-,C,E,2.1,8,10,15,26.0,aman,0.0,3,False
+Combivent Respule,data tidak cukup,aturan stok,,-,C,E,0.0,0,0,0,,stok tak diketahui,,3,False
+Disposible syringe 10cc,data tidak cukup,aturan stok,,-,C,E,0.5,3,4,6,,stok tak diketahui,,3,False
+PECTORIN EXP SIRUP,data tidak cukup,aturan stok,,-,C,E,0.2,1,2,2,,stok tak diketahui,,3,False
+POLYSILANE 100ML,data tidak cukup,aturan stok,,-,C,E,0.8,5,6,9,,stok tak diketahui,,3,False
+TEMPRA SIRUP,data tidak cukup,aturan stok,,-,C,E,0.2,1,2,2,,stok tak diketahui,,3,False
+VENTOLIN SIRUP,data tidak cukup,aturan stok,,-,C,E,0.1,1,1,1,,stok tak diketahui,,3,False
+BEDAK SALISYL,data tidak cukup,aturan stok,,-,C,N,0.1,1,1,2,9.0,aman,0.0,2,False
+BENOSON-G SALEP,intermittent,-,,-,C,N,0.2,1,2,2,10.0,aman,0.0,2,False
+BENOSON-N 15 G SALEP,intermittent,SBA,100.0,"az=0.4,ap=0.05",C,N,2.5,4,7,11,12.0,aman,0.0,2,False
+BIOPLACENTON,data tidak cukup,aturan stok,,-,C,N,0.0,0,0,0,16.0,aman,0.0,2,False
+CALLUSOL,intermittent,-,,-,C,N,2.0,3,5,9,6.0,aman,0.0,2,False
+COMBANTRIN 250 MG TABLET,intermittent,SBA,149.52481398311195,"az=0.05,ap=0.35",C,N,5.8,10,15,25,122.0,aman,0.0,2,False
+FARSIFEN PLUS (PARASETAMOL + IBUPROFEN) TABLET,lumpy,-,,-,C,N,3.3,15,18,27,330.0,aman,0.0,2,False
+HYDROCORTISONE SALEP,lumpy,SBA,104.9333843034351,"az=0.95,ap=0.95",C,N,2.2,5,7,11,34.0,aman,0.0,2,False
+INERSONE SALEP,data tidak cukup,aturan stok,,-,C,N,0.1,1,1,1,2.0,aman,0.0,2,False
+INFUSET MAKRO,data tidak cukup,aturan stok,,-,C,N,0.2,1,2,2,17.0,aman,0.0,2,False
+KASA,data tidak cukup,aturan stok,,-,C,N,0.0,0,0,0,16.0,aman,0.0,2,False
+SIMVASTATIN 10 MG TABLET,data tidak cukup,aturan stok,,-,C,N,0.9,5,6,9,290.0,aman,0.0,2,False
+SIMVASTATIN 20 MG TABLET,intermittent,Croston,100.0,"az=0.05,ap=0.05",C,N,2.5,10,13,19,255.0,aman,0.0,2,False
+STIK ASAM URAT,intermittent,SBA,94.53923357664233,"az=0.05,ap=0.95",C,N,4.2,16,20,31,50.0,aman,0.0,2,False
+STIK CHOLESTROL,intermittent,SBA,94.53923357664233,"az=0.05,ap=0.95",C,N,3.3,13,16,25,40.0,aman,0.0,2,False
+Lidocain injeksi,data tidak cukup,aturan stok,,-,C,N,13.4,45,58,90,,stok tak diketahui,,2,False

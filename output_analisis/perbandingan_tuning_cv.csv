@@ -1,0 +1,176 @@
+obat,kategori_demand,metode_terbaik,WAPE_test,metode_cv,WAPE_test_cv,delta
+ACETYLCYSTEIN KAP,smooth,SES,88.1,SES,77.6,-10.5
+ACITRAL TAB,data tidak cukup,aturan stok,,aturan stok,,
+ACYCLOVIR SALEP,intermittent,SBA,138.5,Croston,100.0,-38.5
+ACYCLOVIR TABLET,intermittent,Croston,100.0,Croston,100.0,0.0
+ALLOPURINOL TABLET,intermittent,SBA,45.5,SBA,55.2,9.7
+AMBEVEN TABLET,intermittent,Croston,36.8,Croston,3.4,-33.4
+AMBROXOL SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+AMBROXOL TABLET,lumpy,-,,-,,
+AMLODIPINE 10 MG TABLET,smooth,SES,23.8,SES,23.5,-0.3
+AMLODIPINE 5 MG,smooth,SES,17.9,SES,18.1,0.2
+AMOXCICILIN SIRUP,intermittent,SBA,42.2,SBA,86.5,44.3
+AMOXICILLIN TABLET,erratic,SES,,SES,,
+ANTASIDA TABLET,data tidak cukup,aturan stok,,aturan stok,,
+ANTRAIN TAB (METAMIZOLE SODIUM),data tidak cukup,aturan stok,,aturan stok,,
+ARKAVIT-C TABLET,lumpy,SBA,100.1,SBA,100.0,-0.1
+ASAM MEFENAMAT 500 MG TABLET,erratic,SES,30.6,SES,25.9,-4.7
+AZITROMICYN TABLET,erratic,SES,45.6,SES,58.2,12.6
+BECEFORT TAB,lumpy,-,,-,,
+BECOMZET TABLET,erratic,SES,114.7,SES,104.4,-10.3
+BEDAK SALISYL,data tidak cukup,aturan stok,,aturan stok,,
+BENOSON-G SALEP,intermittent,-,,-,,
+BENOSON-M SALEP,lumpy,-,,-,,
+BENOSON-N 15 G SALEP,intermittent,SBA,100.0,Croston,100.0,0.0
+BETADINE KUMUR,data tidak cukup,aturan stok,,aturan stok,,
+BIOLYSIN KIDS TAB KUNYAH,data tidak cukup,aturan stok,,aturan stok,,
+BIOPLACENTON,data tidak cukup,aturan stok,,aturan stok,,
+"BISOPROLOL 2,5MG",data tidak cukup,aturan stok,,aturan stok,,
+BISOPROROL 5 TABLET,lumpy,-,,-,,
+BUSCOPAN INJEKSI,intermittent,-,,-,,
+Betadine 15 ml,data tidak cukup,aturan stok,,aturan stok,,
+CAIRAN INFUS NACL 500ML,lumpy,SBA,525.5,SBA,537.8,12.3
+CAIRAN INFUS RINGER LAKTAT 500ML,intermittent,-,,-,,
+CALLUSOL,intermittent,-,,-,,
+CALORTUSIN TABLET,lumpy,-,,-,,
+CANDESARTAN 16MG TAB,data tidak cukup,aturan stok,,aturan stok,,
+CANDESARTAN 8MG TAB,data tidak cukup,aturan stok,,aturan stok,,
+"CAPTOPRIL 12,5MG TABLET",intermittent,-,,-,,
+CEFADROXIL 250MG SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+CEFADROXIL 500MG KAPSUL,erratic,SES,174.9,SES,150.5,-24.4
+CEFIXIME 200MG,data tidak cukup,aturan stok,,aturan stok,,
+CEFIXIME SIRUP,intermittent,Croston,38.9,Croston,58.4,19.5
+CENDO LYTERS TETES MATA,data tidak cukup,aturan stok,,aturan stok,,
+CENDOXITROL TETES MATA STERIL,intermittent,-,,-,,
+CETIRIZINE 10 MG TABLET,smooth,SES,37.6,SES,36.8,-0.8
+CETIRIZINE SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+CIPROFLOXASIN 500 MG TABLET,smooth,SES,38.8,SES,82.2,43.4
+COMBANTRIN 250 MG TABLET,intermittent,SBA,149.5,SBA,37.3,-112.2
+COUNTERPAIN CREAM 30G,intermittent,-,,-,,
+CTM TABLET,lumpy,-,,-,,
+CURVIT TABLET,lumpy,-,,-,,
+Candesartan 8mg Tab,intermittent,-,,-,,
+Combivent Respule,data tidak cukup,aturan stok,,aturan stok,,
+DEXAMETHASONE INJEKSI,erratic,SES,354.4,SES,363.4,9.0
+DEXAMETHASONE TABLET,data tidak cukup,aturan stok,,aturan stok,,
+DIAFORM TABLET,intermittent,-,,-,,
+DOMPERIDONE SIRUP,intermittent,-,,-,,
+DOMPERIDONE TABLET,erratic,SES,85.0,SES,79.0,-6.0
+DULCOLAX 5MG TABLET,intermittent,-,,-,,
+Disposible syringe 10cc,data tidak cukup,aturan stok,,aturan stok,,
+Disposible syringe 3cc,data tidak cukup,aturan stok,,aturan stok,,
+ERLAMICETIN TETES MATA,intermittent,SBA,100.0,SBA,100.0,0.0
+ERLAMICETIN TETES TELINGA,intermittent,SBA,100.0,SBA,100.0,0.0
+ERYTHROMYCIN 500 MG TABLET,lumpy,-,,-,,
+EXTROPECT (AMBROXOL) SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+Erlamycetin Saleb Mata,data tidak cukup,aturan stok,,aturan stok,,
+FARSIFEN PLUS (PARASETAMOL + IBUPROFEN) TABLET,lumpy,-,,-,,
+FG TROCES TABLET,erratic,SES,41.4,SES,33.5,-7.9
+FIBUMIN KAP,data tidak cukup,aturan stok,,aturan stok,,
+FLUTAMOL TABLET,lumpy,-,,-,,
+GABAPENTIN 100MG,data tidak cukup,aturan stok,,aturan stok,,
+GENTAMICYN SALEP,smooth,SES,,SES,,
+GRANTUSIF TABLET,smooth,SES,80.1,SES,77.9,-2.2
+Gencinolon,data tidak cukup,aturan stok,,aturan stok,,
+HANSAPLAST PLESTER,data tidak cukup,aturan stok,,aturan stok,,
+HEVIT PLUS TAB,intermittent,Croston,80.1,Croston,80.3,0.2
+HISTIGO (BETAHISTIN) 6 MG TABLET,smooth,SES,61.2,SES,72.2,11.0
+HOT IN CREAM  60G,intermittent,-,,-,,
+HOT IN DCL SALEP 30 gr,data tidak cukup,aturan stok,,aturan stok,,
+HUFABETHAMINE SIRUP,erratic,SES,13.4,SES,8.1,-5.3
+HUFAGRIP BP HIJAU SIRUP,intermittent,Croston,100.0,Croston,100.0,0.0
+HYDROCORTISON CREAM 1%,data tidak cukup,aturan stok,,aturan stok,,
+HYDROCORTISONE SALEP,lumpy,SBA,104.9,SBA,206.4,101.5
+IBUPROFEN 400MG TABLET,lumpy,-,,-,,
+"ILIADIN SPRAY 0,05%",data tidak cukup,aturan stok,,aturan stok,,
+IMBOOST KIDS SIRUP,intermittent,-,,-,,
+IMBOOST TABLET,data tidak cukup,aturan stok,,aturan stok,,
+INERSONE SALEP,data tidak cukup,aturan stok,,aturan stok,,
+INFUSET MAKRO,data tidak cukup,aturan stok,,aturan stok,,
+INTERZINC SIRUP,intermittent,Croston,100.0,Croston,100.0,0.0
+INTRIZIN TAB (CETIRIZIN),lumpy,-,,-,,
+Infuset Dewasa,data tidak cukup,aturan stok,,aturan stok,,
+KALBION TAB,data tidak cukup,aturan stok,,aturan stok,,
+KASA,data tidak cukup,aturan stok,,aturan stok,,
+KASA STERIL,lumpy,-,,-,,
+KENALOG SALEP,intermittent,Croston,100.0,Croston,100.0,0.0
+KETOCONAZOLE SALEP,lumpy,SBA,419.2,SBA,328.5,-90.7
+KETONAZOLE 200MG TABLET,lumpy,Croston,646.6,Croston,715.9,69.3
+KETOROLAC INJEKSI,erratic,SES,153.2,SES,31.8,-121.4
+Kasa Non Steril,data tidak cukup,aturan stok,,aturan stok,,
+L-BIO,intermittent,Croston,100.0,Croston,100.0,0.0
+LACTO B,intermittent,-,,-,,
+LACYS (ACETYLSISTEIN),data tidak cukup,aturan stok,,aturan stok,,
+LANSOPRAZOLE KAPSUL,lumpy,SBA,136.1,Croston,166.9,30.8
+LASAL SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+LERZIN (CETIRIZIN) SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+LIBROFED (TRIPROLIDIN =~ PSEUDOEFEDRIN) TAB,data tidak cukup,aturan stok,,aturan stok,,
+Lidocain injeksi,data tidak cukup,aturan stok,,aturan stok,,
+MADU TJ SACHET,lumpy,SBA,100.4,Croston,100.1,-0.3
+METHYLPREDNISOLON 8MG TAB,lumpy,-,,-,,
+METHYLPREDNISOLONE 4 MG TABLET,erratic,SES,40.3,SES,32.2,-8.1
+METRONIDAZOLE 500MG TABLET,smooth,SES,456.1,SES,689.2,233.1
+MICROLAX RECTAL,data tidak cukup,aturan stok,,aturan stok,,
+NATRIUM DIKLOFENAK 50 MG TAB,data tidak cukup,aturan stok,,aturan stok,,
+NEO-PROTIFED (TRIPROLIDIN + PSEUDOEFEDRIN) TAB,intermittent,-,,-,,
+NEURALGIN TABLET,intermittent,-,,-,,
+NEUROBION FORTE/PINK TABLET,lumpy,SBA,191.9,SBA,698.6,506.7
+NEUROBION PUTIH TABLET,smooth,SES,28.0,SES,29.9,1.9
+Norages Injeksi,data tidak cukup,aturan stok,,aturan stok,,
+OMEGTAMINE TAB,intermittent,-,,-,,
+OMEPRAZOLE KAPSUL,erratic,SES,50.1,SES,49.7,-0.4
+ONDANSETRON 4MG TABLET,intermittent,-,,-,,
+ONDANSETRON INJEKSI,intermittent,-,,-,,
+ORALITE,smooth,SES,69.8,SES,70.0,0.2
+PAMOL TAB 500MG (PARACETAMOL TAB),data tidak cukup,aturan stok,,aturan stok,,
+PARACETAMOL 500MG TABLET,data tidak cukup,aturan stok,,aturan stok,,
+PARACETAMOL INFUS,intermittent,-,,-,,
+PECTORIN EXP SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+PLANTACYD SIRUP,lumpy,-,,-,,
+POLYSILANE 100ML,data tidak cukup,aturan stok,,aturan stok,,
+POLYSILANE TABLET,lumpy,-,,-,,
+PROMAVIT TABLET,data tidak cukup,aturan stok,,aturan stok,,
+PROME SIRUP,lumpy,-,,-,,
+PROMEDEX TAB,lumpy,SBA,100.5,SBA,170.3,69.8
+PULMICORT NEBULIZER,intermittent,-,,-,,
+RANIGEN (RANITIDIN) TABLET,data tidak cukup,aturan stok,,aturan stok,,
+RANITIDINE INJEKSI,data tidak cukup,aturan stok,,aturan stok,,
+RANITIDINE TABLET,smooth,SES,81.9,SES,82.3,0.4
+RHINOS TABLET,data tidak cukup,aturan stok,,aturan stok,,
+SALBUTAMOL 2 MG TABLET,lumpy,Croston,159.7,Croston,100.0,-59.7
+SANGOBION KAPSUL,erratic,SES,22.6,SES,28.1,5.5
+SANMOL FORTE SIRUP,intermittent,-,,-,,
+SANMOL SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+SCABICID (PERMEHETRIN 5%) CREAM 10G,intermittent,-,,-,,
+SCABIMITE SALEB 10G,data tidak cukup,aturan stok,,aturan stok,,
+SCABIMITE SALEB 30G,data tidak cukup,aturan stok,,aturan stok,,
+SCOPMA PLUS (HYOSCINE + PARASETAMOL) TABLET,erratic,SES,94.4,SES,104.8,10.4
+SCOPMA TAB (HYOSCINE BUTYLBROMIDE),data tidak cukup,aturan stok,,aturan stok,,
+SELCOM C TABLET,lumpy,-,,-,,
+SILADEX BIRU SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+SIMVASTATIN 10 MG TABLET,data tidak cukup,aturan stok,,aturan stok,,
+SIMVASTATIN 20 MG TABLET,intermittent,Croston,100.0,Croston,100.0,0.0
+STIK ASAM URAT,intermittent,SBA,94.5,Croston,98.3,3.8
+STIK CHOLESTROL,intermittent,SBA,94.5,Croston,98.3,3.8
+SUCRALFATE SIRUP,lumpy,-,,-,,
+Sanadryl DMP 120 ML,intermittent,-,,-,,
+Sanadryl Ekspektoran 120 ml,data tidak cukup,aturan stok,,aturan stok,,
+TEMPRA SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+THROMBOPOP Gel,data tidak cukup,aturan stok,,aturan stok,,
+TIFALSIC (PARASETAMOL + IBUPROFEN) TABLET,intermittent,-,,-,,
+TRANSAMIN (ASAM TRANEXAMAT 500MG) TABLET,erratic,SES,157.5,SES,152.3,-5.2
+TREMENZA TAB,data tidak cukup,aturan stok,,aturan stok,,
+TRIANTA TABLET,lumpy,-,,-,,
+TUSELIX (TRIPROLIDIN =~ PSEUDOEFEDRIN) TAB,data tidak cukup,aturan stok,,aturan stok,,
+ULTRAFIX,data tidak cukup,aturan stok,,aturan stok,,
+URINTER TABLET,intermittent,Croston,40.0,Croston,40.6,0.6
+VENTOLIN NEBULLIZER,intermittent,-,,-,,
+VENTOLIN SIRUP,data tidak cukup,aturan stok,,aturan stok,,
+"Verban elastis 10cm x 4,5m",intermittent,SBA,193.8,Croston,393.9,200.1
+"Verban elastis 15cm x 4,5m",intermittent,-,,-,,
+"Verban elastis 7,5cm x 4,5m",lumpy,-,,-,,
+WOODS ANTITUSIVE SIRUP 100ML,lumpy,SBA,1000.2,SBA,393.9,-606.3
+WOODS EKSPEKTORAN SIRUP 100ML,smooth,SES,140.5,SES,130.4,-10.1
+ZEGAVIT TABLET,intermittent,-,,-,,
+ZINK TABLET,lumpy,-,,-,,
+superhoid Supp,data tidak cukup,aturan stok,,aturan stok,,

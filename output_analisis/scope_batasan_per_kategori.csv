@@ -1,0 +1,7 @@
+Kategori,Minimal data,Metode,Batasan / Catatan
+data tidak cukup,< 2 bln ber-permintaan,TIDAK diforecast,Pakai aturan stok sederhana / order-on-demand; di luar scope peramalan
+intermittent,≥ 2 bln ber-permintaan,Croston / SBA,"Akurasi rendah; fokus ke service level (fill rate), bukan WAPE"
+lumpy,≥ 2 bln ber-permintaan,Croston / SBA,Paling sulit (jeda + lonjakan); WAPE tinggi wajar
+erratic,ideal ≥ 6 bln,SES,Bisa diramal; akurasi sedang
+smooth,ideal ≥ 6–8 bln,SES,Paling layak diramal; WAPE paling kecil
+(musiman),≥ 24 bln (2 siklus),Holt-Winters / SARIMA,BELUM terpenuhi — data baru 1 tahun; rekomendasi pengembangan
